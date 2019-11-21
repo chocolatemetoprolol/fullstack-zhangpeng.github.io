@@ -30,6 +30,8 @@
 | "SS"             | 10th's & 100th's place of fractional second           | 123ms -> 12, 7ms -> 00   |
 | "SSS"            | 10th's & 100th's & 1,000's place of fractional second | 123ms -> 123, 7ms -> 007 |
 
+---
+
 > Title: DateFormatter
 >
 > Date: 2019.11.08
