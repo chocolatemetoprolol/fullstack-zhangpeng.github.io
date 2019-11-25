@@ -286,7 +286,7 @@ window.webkit.messageHandlers.test1.postMessage({msg: "test1"});
 
 > Title: WKWebView 使用及注意事项
 >
-> Date: 2017.08.29
+> Date: 2017.12.03
 >
 > Author: zhangpeng
 >
