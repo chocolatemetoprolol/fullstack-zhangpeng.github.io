@@ -20,7 +20,7 @@
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;
 ```
 
-而第2种类型和第3种类型，就没有方法让我们可以直接监听到了。但是只要是滑动了，就一定会触发 `UIScrollView` 的下面代理，然后通过 `UIScrollView` 部分属性的改变，我们就可以监听到滚动停止了，后面会详细介绍方法。
+而第2种类型和第3种类型，就没有方法让我们可以直接监听到了。但是只要是滑动了，就一定会触发 `UIScrollView` 的下面代理，然后通过 `UIScrollView` 部分属性的改变，我们就可以监听到滚动停止了，后面会详细介绍方法。
 
 ```objc
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
@@ -31,7 +31,7 @@
 
 ### 监听 UIScrollView 停止滚动
 
-通过翻阅文档，我们可以看到 `UIScrollView` 有三个属性: **tracking、dragging、decelerating。**
+通过翻阅文档，我们可以看到 `UIScrollView` 有三个属性: **tracking、dragging、decelerating。**
 
 ```objc
 // returns YES if user has touched. may not yet have started dragging
