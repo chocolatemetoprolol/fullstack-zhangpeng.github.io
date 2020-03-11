@@ -260,7 +260,7 @@ $ sudo /etc/init.d/mysql restart
 
 ---
 
-> Title: Ubuntu 安装 mysql
+> Title: Ubuntu 安装 MySQL
 >
 > Date: 2019.04.03
 >

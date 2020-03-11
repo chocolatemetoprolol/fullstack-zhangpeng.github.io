@@ -213,9 +213,9 @@ diff <(journalctl -b -1 | head -n20) <(journalctl -b -2 | head -n20)
 
 ## 附录
 
-1. [shell](https://github.com/hacker-tools/hacker-tools.github.io/blob/master/shell.md)
+1. [Shell](https://github.com/hacker-tools/hacker-tools.github.io/blob/master/shell.md)
 2. [Shell笔记](http://tuling56.site/ref/manual/shell.html)
-3. [shell 中各种括号的作用](http://www.runoob.com/w3cnote/linux-shell-brackets-features.html)
+3. [Shell 中各种括号的作用](http://www.runoob.com/w3cnote/linux-shell-brackets-features.html)
 4. [Shell test 命令](http://www.runoob.com/linux/linux-shell-test.html)
 
 ---

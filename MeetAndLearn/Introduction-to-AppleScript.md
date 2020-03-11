@@ -1,4 +1,4 @@
-# AppleScript 实践
+# AppleScript 入门与实践
 
 `AppleScript` 是 `Mac OS X` 内置的一种功能强大的脚本语言。
 
@@ -17,7 +17,7 @@
 
 ---
 
-> Title: AppleScript 实践
+> Title: AppleScript 入门与实践
 >
 > Date: 2018.05.23
 >
