@@ -17,7 +17,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 25b1cac1c6d55b1f18257f5992e2f19fe4b375e1 # github 上的token环境变量
+  github-token: f67a2a67d32525ba82ddcfe6b56b168a60f6f779 # github 上的token环境变量
   local-dir: ./_book/ ## 根据情况自定义到静态文件输出目录
   target-branch: gh-pages
   verbose: true
