@@ -47,7 +47,7 @@
 
 1. **安装证书**
    > Help -> SSL Proxying -> Install Charles Root Certificate on a Mobile Device or Remote Broswer
-   
+
    ![Charles](http://upload-images.jianshu.io/upload_images/4835393-65e7810e921dbed0.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
     1. 将手机和电脑都连接到同一无线局域网，进入无线局域网设置，手动设置代理

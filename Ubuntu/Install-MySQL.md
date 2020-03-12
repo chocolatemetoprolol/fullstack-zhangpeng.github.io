@@ -171,7 +171,7 @@ Query OK, 0 rows affected (0.08 sec)
 
 编辑配置文件（`/etc/mysql/mysql.conf.d/mysqld.cnf`），将下面内容填入配置文件。
 
-```
+```shell
 [client]
 
 port = 3306
@@ -260,7 +260,7 @@ $ sudo /etc/init.d/mysql restart
 
 ---
 
-> Title: Ubuntu 安装 mysql
+> Title: Ubuntu 安装 MySQL
 >
 > Date: 2019.04.03
 >
