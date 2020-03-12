@@ -1,0 +1,9 @@
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 25b1cac1c6d55b1f18257f5992e2f19fe4b375e1
+  keep_history: true
+  on:
+    branch: develop
+  local_dir: _book
+  verbose: true
