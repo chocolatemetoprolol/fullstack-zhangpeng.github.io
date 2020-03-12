@@ -3,7 +3,11 @@
 * [Introduction](README.md)
 * [GitHub](https://github.com/fullstack-zhangpeng)
 * iOS
+* LeetCode
+  * [1. 两束之和](leetcode/two-sum.md)
+  * [2. 有效的括号](leetcode/valid-parentheses.md)
 * Mac
+  * [iTerm2 一个更好用的终端](mac/a-better-terminal.md)
   * [升级 Git 版本](mac/update-git-version.md)
 * Ubuntu
   * [Ubuntu 安装 MySQL](ubuntu/install-mysql.md)

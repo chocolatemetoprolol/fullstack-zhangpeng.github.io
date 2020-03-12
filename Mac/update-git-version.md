@@ -2,7 +2,7 @@
 
 **不吹牛的说，这篇文章绝对是目前网上最简单的 `Git` 升级教程了**
 
-## 安装 `Homebrew`
+## 安装 Homebrew
 
 [Homebrew](https://brew.sh/) 是一个软件包管理器。它的作用就是将软件包安装到自己的目录中，然后将其文件符号链接到 `/usr/local`。更多信息，请自行进入官网查看。
 
@@ -12,7 +12,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## 升级 `git`
+## 升级 git
 
 1. 安装最新版的 `git`
 
