@@ -14,7 +14,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 7900f72dc644b9bdd6dfb0fe072480a4a20a936c 
+  github-token: $GITHUB_TOKEN 
   local-dir: ./_book/ 
   target-branch: gh-pages
   verbose: true
