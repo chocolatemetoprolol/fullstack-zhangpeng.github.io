@@ -1,3 +1,4 @@
+os: osx
 language: node_js # 构建所需的语言环境
 node_js:
   - "v12.16.0"  # 对应的版本
