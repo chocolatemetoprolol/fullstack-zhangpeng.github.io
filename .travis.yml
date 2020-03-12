@@ -19,7 +19,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   # github 上的token环境变量
-  github-token: 47b1079c7f169bdb0a07cc550cd8074cc9e44251 
+  github-token: db3df95e228b78f79165c31721142352444b2217 
   # 根据情况自定义到静态文件输出目录
   local-dir: ./_book/ 
   target-branch: gh-pages
