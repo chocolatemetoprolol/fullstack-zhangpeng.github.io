@@ -55,7 +55,7 @@ hexo init
 
 其中比较主要的有：
 
-```
+```shell
 .
 ├── source          //用于存放博客的 markdown 文件，以及静态文件
 │   └── _posts      //博客的 markdown 文件
@@ -105,8 +105,8 @@ hexo init
 
    打开`_config.yml`文件，搜索`deploy`，这个就是我们要配置的地方了，如果没有就在文件的最后添加下面的代码。
 
-   ```
-   deploy： 
+   ```shell
+   deploy：
     type： git
     repo： github上的项目地址
    ```
@@ -120,7 +120,7 @@ hexo init
 
 接下来就剩下发布这一步了，在终端中进入博客的根目录，执行：
 
-```
+```shell
 hexo clean && hexo g && hexo d
 ```
 
