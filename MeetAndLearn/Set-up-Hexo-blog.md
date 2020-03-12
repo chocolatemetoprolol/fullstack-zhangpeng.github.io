@@ -13,7 +13,7 @@ added 67 packages from 317 contributors in 6.685s
 
 如果因为权限问题安装失败的，那么在命令前添加 `sudo`，输入密码后就可以安装了
 
-![图1，安装hexo-cli](http://upload-images.jianshu.io/upload_images/4835393-391104ecc22eb8e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图1，安装hexo-cli](http://img.zhangpeng.site/20200312/1.png)
 
 通过 `hexo -v` 可以检查 `hexo-cli` 是否安装成功
 
