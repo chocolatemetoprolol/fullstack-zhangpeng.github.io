@@ -30,10 +30,20 @@ jobs:
         gitbook install
         gitbook build
 
-    # push 
-    - name: Push
-      # working-directory: ./_book
+    - name: Create local changes
       run: |
         shopt -s extglob
         rm -rf !(_book)
-        ls
+
+    - name: Commit files
+      working-directory: ./_book
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Deplsy" -a
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        
