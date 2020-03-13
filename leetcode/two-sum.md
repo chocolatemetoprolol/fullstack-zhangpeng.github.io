@@ -50,7 +50,7 @@ func twoSum(nums []int, target int) []int {
 
 ---
 
-> Title: 1.两数之和
+> Title: 两数之和
 >
 > Date: 2019.11.20
 >

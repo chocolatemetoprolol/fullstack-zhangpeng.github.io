@@ -6,7 +6,7 @@
   * [double 转 NSString 出现精度异常](ios/double-to-nsstring.md)
   * [App 沙盒](ios/sandbox.md)
 * LeetCode
-  * [1. 两束之和](leetcode/two-sum.md)
+  * [1. 两数之和](leetcode/two-sum.md)
   * [2. 有效的括号](leetcode/valid-parentheses.md)
 * Mac
   * [Mac 系统重装](mac/reinstall-mac-system.md)

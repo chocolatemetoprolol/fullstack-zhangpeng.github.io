@@ -17,7 +17,7 @@ NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error
 [NSString stringWithFormat:@"转换错误的结果为%@", dic[@"double"]];
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-f9daffa66dafa028.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/20200313/1.jpeg)
 
 到这，也许有人会说：在转字符串时，加上保留的位数就可以了。但其实这样做并不是太合理。因为我们根本不服务端后台会给我们返回什么数据，所以我们不知道该保留几位小数。同理，我们也不能采取切割字符串的方式去保留小数位数。
 
@@ -32,7 +32,7 @@ NSDecimalNumber *dn = [NSDecimalNumber decimalNumberWithString:dStr];
 [NSString stringWithFormat:@"转换成功的结果为%@", dn.stringValue];
 ```
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-f9daffa66dafa028.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/20200313/1.jpeg)
 
 本文的所有代码均以上传至 `GitHub`，如需[自取](https://github.com/fullstack-zhangpeng/P_App_OC.git)~
 

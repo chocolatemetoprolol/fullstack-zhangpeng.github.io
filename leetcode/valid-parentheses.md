@@ -113,7 +113,7 @@ func (s *Stack) Length () int {
 
 ---
 
-> Title: 20.有效的括号
+> Title: 有效的括号
 >
 > Date: 2019.11.09
 >
