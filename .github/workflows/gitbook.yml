@@ -34,6 +34,6 @@ jobs:
     - name: Push
       # working-directory: ./_book
       run: |
-        shopt, -s
+        shopt -s extglob
         rm -rf !(_book)
         ls
