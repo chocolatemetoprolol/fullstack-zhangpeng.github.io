@@ -25,7 +25,7 @@ jobs:
         node-version: '12.x'
     # gitbook
     - name: gitbook
-       run: npm install -g gitbook-cli
+    - run: npm install -g gitbook-cli
        run: gitbook install
        run: gitbook build
 
