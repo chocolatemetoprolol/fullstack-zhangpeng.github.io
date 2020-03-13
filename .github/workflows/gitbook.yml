@@ -33,8 +33,9 @@ jobs:
     - name: Create local changes
       run: |
         shopt -s extglob
-        rm -rf .[!.]*
+        rm -rf .[!.|!.github]*
         rm -rf !(_book)
+        rm -rf _book
         mv _book/* .
         ls -a
 
