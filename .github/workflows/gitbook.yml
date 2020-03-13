@@ -30,6 +30,11 @@ jobs:
         gitbook install
         gitbook build
 
+    - name: Create local changes
+      run: |
+        shopt -s extglob
+        rm -rf !(_book)
+
     - name: Push
       uses: github-actions-x/commit@v2.4
       with:
@@ -37,14 +42,9 @@ jobs:
         push-branch: 'master'
         commit-message: 'publish'
         force-add: 'true'
-        files: _book
+        # files: _book
         name: zhangpeng
         email: zhangpeng.0304@aliyun.com 
-
-    # - name: Create local changes
-    #   run: |
-    #     shopt -s extglob
-    #     rm -rf !(_book)
 
     # - name: Commit files
     #   working-directory: ./_book
