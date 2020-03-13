@@ -16,11 +16,21 @@ jobs:
     runs-on: macos-latest
 
     steps:
+    # checkout
     - uses: actions/checkout@v2
+    # language
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 12
-    - run: npm install -g gitbook-cli
-    - run: gitbook install
-    - run: gitbook build
+        node-version: '12.x'
+    # gitbook
+    - name: gitbook
+       run: npm install -g gitbook-cli
+       run: gitbook install
+       run: gitbook build
+
+    # push 
+    - name: Push GitBook
+      working-directory: ./_book
+        run: |
+          pwd
