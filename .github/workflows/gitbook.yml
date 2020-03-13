@@ -30,20 +30,31 @@ jobs:
         gitbook install
         gitbook build
 
-    - name: Create local changes
-      run: |
-        shopt -s extglob
-        rm -rf !(_book)
-
-    - name: Commit files
-      working-directory: ./_book
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "Deplsy" -a
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Push
+      uses: github-actions-x/commit@v2.4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.travis-GitBook }}
+        push-branch: 'master'
+        commit-message: 'publish'
+        force-add: 'true'
+        files: _book
+        name: zhangpeng
+        email: zhangpeng.0304@aliyun.com 
+
+    # - name: Create local changes
+    #   run: |
+    #     shopt -s extglob
+    #     rm -rf !(_book)
+
+    # - name: Commit files
+    #   working-directory: ./_book
+    #   run: |
+    #     git config --local user.email "action@github.com"
+    #     git config --local user.name "GitHub Action"
+    #     git commit -m "Deplsy" -a
+
+    # - name: Push changes
+    #   uses: ad-m/github-push-action@master
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
         
