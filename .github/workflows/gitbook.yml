@@ -36,7 +36,7 @@ jobs:
         rm -rf !(_book)
 
     - name: Push
-      uses: dciborow/commit@0.0.2
+      uses: dciborow/commit@0.0.1
       with:
         with:
         github-token: ${{ secrets.travis-GitBook }}
