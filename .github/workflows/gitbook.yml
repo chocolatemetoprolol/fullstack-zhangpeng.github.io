@@ -34,6 +34,7 @@ jobs:
       run: |
         shopt -s extglob
         rm -rf !(_book)
+        ls -a
 
     - name: Push
       uses: dciborow/commit@0.0.1
@@ -42,9 +43,9 @@ jobs:
         github-token: ${{ secrets.travis-GitBook }}
         push-branch: 'master'
         commit-message: 'publish'
-        force-add: 'true'
         force-push: 'true'
-        files: _book
+        # force-add: 'true'
+        # files: _book
         name: zhangpeng
         email: zhangpeng.0304@aliyun.com 
 
