@@ -31,7 +31,9 @@ jobs:
         gitbook build
 
     # push 
-    - name: Push GitBook
-      working-directory: ./_book
+    - name: Push
+      # working-directory: ./_book
       run: |
-        pwd
+        shopt, -s
+        rm -rf !(_book)
+        ls
