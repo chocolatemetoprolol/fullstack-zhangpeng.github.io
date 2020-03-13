@@ -34,4 +34,4 @@ jobs:
     - name: Push GitBook
       working-directory: ./_book
       run: |
-        echo 222
+        pwd
