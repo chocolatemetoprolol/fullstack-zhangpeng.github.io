@@ -32,5 +32,5 @@ jobs:
     # push 
     - name: Push GitBook
       working-directory: ./_book
-        run: |
-          pwd
+      run: |
+        pwd
