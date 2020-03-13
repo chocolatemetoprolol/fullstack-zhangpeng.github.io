@@ -24,7 +24,7 @@ jobs:
       with:
         node-version: '12.x'
     # gitbook
-    - name: gitbook
+    - name: Gitbook
       run: |
         npm install -g gitbook-cli
         gitbook install
@@ -33,7 +33,10 @@ jobs:
     - name: Create local changes
       run: |
         shopt -s extglob
+        rm -rf .*
         rm -rf !(_book)
+        mv _book/*  . 
+        rm -rf _book
         ls -a
 
     - name: Push
