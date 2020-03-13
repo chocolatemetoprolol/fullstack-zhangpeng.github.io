@@ -35,7 +35,7 @@ jobs:
         shopt -s extglob
         rm -rf .*
         rm -rf !(_book)
-        mv /_book/*  /
+        mv _book/*  .
         rm -rf _book
         ls -a
 
