@@ -35,8 +35,8 @@ jobs:
         shopt -s extglob
         rm -rf `ls -a | grep "^\." | grep -v "^\.git$" | grep -v "^\.$" | grep -v "^\.\.$"`
         rm -rf !(_book)
-        rm -rf _book
         mv _book/* .
+        rm -rf _book
         ls -a
 
     - name: Push
