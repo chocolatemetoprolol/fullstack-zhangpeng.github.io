@@ -25,12 +25,13 @@ jobs:
         node-version: '12.x'
     # gitbook
     - name: gitbook
-      run: npm install -g gitbook-cli
-      run: gitbook install
-      run: gitbook build
+      run: |
+        npm install -g gitbook-cli
+        gitbook install
+        gitbook build
 
     # push 
     - name: Push GitBook
       working-directory: ./_book
       run: |
-        pwd
+        echo 222
