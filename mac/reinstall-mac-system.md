@@ -46,7 +46,7 @@
 | Shift-Option-Command-R（需要安装 macOS Sierra 10.12.4 或更高版本） |  安装 Mac 附带的 macOS 或最接近的仍可用版本。 |
 
 进入恢复模式后，我们可以看到下面四个功能：
-![恢复模式](http://img.zhangpeng.site/20180616/1.jpg)
+![恢复模式](http://img.zhangpeng.site/2018/06/16/1.jpg)
 
 选择重新安装 `macOS`，根据提示我们就可以完成新系统的安装了。
 

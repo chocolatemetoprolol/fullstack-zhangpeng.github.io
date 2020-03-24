@@ -18,7 +18,7 @@
 
 通过菜单拦中的选项，我们可以安装整数：
 
-![Charles](http://img.zhangpeng.site/20200314/1.jpg)
+![Charles](http://img.zhangpeng.site/2019/01/02/1.jpg)
 
 ### 给 `PC` 安装证书
 
@@ -26,12 +26,12 @@
    > Help -> SSL Proxying -> Install Charles Root Certificate
 
     在弹框中，根据自己的情况选择对应的钥匙串
-    ![Charles](http://img.zhangpeng.site/20200314/2.jpg)
+    ![Charles](http://img.zhangpeng.site/2019/01/02/2.jpg)
 
 2. **信任证书**
 
     进入菜单，选择钥匙串访问，在搜索框中搜索 `Charles` ，找到 `Charles Proxy CA`。双击打开证书的信息界面，将红框中的选项改为始终信任。
-    ![Charles](http://img.zhangpeng.site/20200314/3.jpg)
+    ![Charles](http://img.zhangpeng.site/2019/01/02/3.jpg)
 
 ### 给 `iOS` 模拟器安装证书
 
@@ -41,25 +41,25 @@
     > Settings -> General -> About -> Certificate Trust Settings
 
     打开 `iOS Simulators` 的证书信任选项
-    ![Charles](http://img.zhangpeng.site/20200314/4.jpg)
+    ![Charles](http://img.zhangpeng.site/2019/01/02/4.jpg)
 
 ### 给手机安装证书
 
 1. **安装证书**
    > Help -> SSL Proxying -> Install Charles Root Certificate on a Mobile Device or Remote Broswer
 
-   ![Charles](http://img.zhangpeng.site/20200314/5.jpg)
+   ![Charles](http://img.zhangpeng.site/2019/01/02/5.jpg)
 
     1. 将手机和电脑都连接到同一无线局域网，进入无线局域网设置，手动设置代理
     2. 按照提示框中的提示, 在无线网设置中，将代理改为手动设置，按图中所示填写 `xxx.xx.xxx.xxx:xxxx`
     3. 使用手机浏览器访问 [chls.pro/ssl](chls.pro/ssl)，按照提示安装证书
-        ![Charles](http://img.zhangpeng.site/20200314/6.jpg)
+        ![Charles](http://img.zhangpeng.site/2019/01/02/6.jpg)
 
 2. **信任证书**
     > 设置 -> 通用 -> 关于本机 -> 证书信任设置
 
     打开刚刚安装的证书的信任选项
-    ![Charles](http://img.zhangpeng.site/20200314/7.jpg)
+    ![Charles](http://img.zhangpeng.site/2019/01/02/7.jpg)
 
 ---
 

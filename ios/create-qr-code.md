@@ -143,7 +143,7 @@ CIImage *outPutImage = [filter outputImage];
 
 > 通过上面两部，就可以得到一张清晰的二维码图片了。
 
- ![qrCode.png](http://img.zhangpeng.site/20200324/2.jpeg)
+ ![qrCode.png](http://img.zhangpeng.site/2017/12/15/1.jpeg)
 
 ## 定制二维码
 
@@ -213,7 +213,7 @@ CIImage *outPutImage = [filter outputImage];
 }
 ```
 
-![qrCode_pink.png](http://img.zhangpeng.site/20200324/3.jpeg)
+![qrCode_pink.png](http://img.zhangpeng.site/2017/12/15/2.jpeg)
 
 ### 添加水印图片（Logo）
 
@@ -295,7 +295,7 @@ CIImage *outPutImage = [filter outputImage];
 }
 ```
 
-![qrCode_splice.png](http://img.zhangpeng.site/20200324/4.jpeg)
+![qrCode_splice.png](http://img.zhangpeng.site/2017/12/15/3.jpeg)
 
 ## 附
 
