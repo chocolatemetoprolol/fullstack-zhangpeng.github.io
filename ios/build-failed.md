@@ -2,7 +2,7 @@
 
 ## -fobjv-weak is not supported on the current deloyment target
 
-![图1](http://img.zhangpeng.site/20200324/5.jpg)
+![图1](http://img.zhangpeng.site/2018/02/09/1.jpg)
 
 **解决方案：**  
 更新 `xcodeproj` 版本。
