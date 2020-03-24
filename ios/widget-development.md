@@ -2,15 +2,15 @@
 
 ## 开发步骤
 
-建议先阅读[Widget 开发-配置篇](http://www.jianshu.com/p/b5c1e69a47f1)，再开始开发，因为开发的过程中需要提前准备一些东西
+建议先阅读[Widget 开发-配置篇](./widget-configuration.md)，再开始开发，因为开发的过程中需要提前准备一些东西
 
 ### 创建新的 `Target`，选择 `Today Extension`
 
 创建完成后，会生成如下图的几个文件。
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-22b66f5e9060ade1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/09/07/1.jpeg)
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-1169e0ba4f7a7dac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/09/07/2.jpeg)
 
 ### 修改 `Today Extension` 的 `Info.plist`
 
@@ -20,7 +20,7 @@
   如果你是使用纯代码进行开发，请按照下面进行操作：  
   1. 请删除 `NSExtensionMainStoryboard` 的键值对和 `MainInterface.storyboard` 文件
   2. 请添加 `NSExtensionPrincipalClass` 这个 `key`，并将 `value` 设置为控制器（如 `TodayViewController`）
-   ![image](http://upload-images.jianshu.io/upload_images/4835393-a9ae38ba56e7fed4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image](http://img.zhangpeng.site/2017/09/07/3.jpeg)
 
 ### 准备工作都已经完成，可以进入开发工作
 
@@ -102,7 +102,7 @@ self.preferredContentSize = CGSizeMake(kScreenW, 100);
 1. 将代码打包成 `Framework`，然后 `link` 到主 `App`和 `Widget` 中 **（推荐）**
 2. 不怕安装包变大的话，可以考虑将需要的第三方库在主 `App` 和 `Widget` 中分别复制一份 **（推荐）**
 3. 将需要共享的文件按图中进行勾选配置
-   ![image](http://upload-images.jianshu.io/upload_images/4835393-d6e9cac64211cd71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image](http://img.zhangpeng.site/2017/09/07/4.jpeg)
 4. 通过 `Pods` 导入，不太建议通过 `Pods` 分别向两个 `Target` 中导入第三方库，因为很容易发生一些不好处理的问题
 
 ### 数据共享
@@ -168,7 +168,7 @@ self.preferredContentSize = CGSizeMake(kScreenW, 100);
 
 1. 设置 `App` 的 `URLSchemes`，打开 `APP` 主要通过 `URLScheme` 打开和传递参数值。
 设置 `URLSchemes` 时，要独特一些，避免与其他 `App` 重复
-    ![image](http://upload-images.jianshu.io/upload_images/4835393-aa8fa3c50692232e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image](http://img.zhangpeng.site/2017/09/07/5.jpeg)
 
 2. 在 `Widget` 中添加点击事件，用于触发打开 `App` 的操作和传递参数
 

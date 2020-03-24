@@ -13,7 +13,7 @@ added 67 packages from 317 contributors in 6.685s
 
 如果因为权限问题安装失败的，那么在命令前添加 `sudo`，输入密码后就可以安装了
 
-![图1，安装hexo-cli](http://img.zhangpeng.site/20200312/1.png)
+![图1，安装hexo-cli](http://img.zhangpeng.site/2017/11/26/1.png)
 
 通过 `hexo -v` 可以检查 `hexo-cli` 是否安装成功
 
@@ -47,11 +47,11 @@ unicode: 12.1
 hexo init
 ```
 
-![图2](http://upload-images.jianshu.io/upload_images/4835393-2cd6f8b943d98c79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图2](http://img.zhangpeng.site/2017/11/26/2.png)
 
 创建完毕后，我们可以看到生成了很多的文件及文件夹，如下：
 
-![图3](http://upload-images.jianshu.io/upload_images/4835393-4c4b1e4c368e13e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图3](http://img.zhangpeng.site/2017/11/26/3.png)
 
 其中比较主要的有：
 
@@ -69,7 +69,7 @@ hexo init
 
 在终端中，执行 `hexo s` 启动服务器，我们就可以在浏览器中看到我们博客了。默认情况下，访问网址为 `http：//localhost：4000/`。
 
-![图4](http://upload-images.jianshu.io/upload_images/4835393-e1992f6390e57560.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图4](http://img.zhangpeng.site/2017/11/26/4.png)
 
 ## 发布博客
 
@@ -83,7 +83,7 @@ hexo init
 
 2. 创建一个用于存放博客的仓库
 
-   ![图5](http://upload-images.jianshu.io/upload_images/4835393-4dd280b5768563f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![图5](http://img.zhangpeng.site/2017/11/26/5.png)
 
    网上大多数的人都建议创建一个如图所示的项目，即`xxx.github.io`，红框中的内容与账户名保持一致。PS.忽略图中红色的报错，我这边报错是因为我已经创建了相同名字的项目✧(≖ ◡ ≖✿)
 
@@ -97,7 +97,7 @@ hexo init
 1. 安装插件
 
    在博客的根目录执行 `npm install hexo-deployer-git  --save`
-    ![图6](http://upload-images.jianshu.io/upload_images/4835393-52f49c492c5555e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![图6](http://img.zhangpeng.site/2017/11/26/6.png)
 
 2. 修改配置文件
 
@@ -114,7 +114,7 @@ hexo init
     **注：**  
     1.上面的配置中，冒号和你填写的内容间一定要有个空格，这是标准的格式，没得谈！！！  
     2.有的同学可能会问可不可以发布到某个分支上，答案是不能。原因请看下图，箭头所指处，明确说明`User pages must be built from the master branch.`
-    ![图7](http://upload-images.jianshu.io/upload_images/4835393-3e6eb71e1755e0e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![图7](http://img.zhangpeng.site/2017/11/26/7.png)
 
 ### 编译&部署博客
 
@@ -125,7 +125,7 @@ hexo clean && hexo g && hexo d
 ```
 
 当您看到 `INFO  Deploy done： git` 时，就说明您的博客成功发布到GitHub上了，通过访问 `http：//xxx.github.io/`，就可以访问到您的博客了，记得把 `xxx` 换成您的项目名。
-![图8](http://upload-images.jianshu.io/upload_images/4835393-f32a75d0428044db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图8](http://img.zhangpeng.site/2017/11/26/8.png)
 
 ### 日常更新博客
 

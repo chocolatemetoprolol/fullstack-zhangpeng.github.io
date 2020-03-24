@@ -1,8 +1,8 @@
-# 常见的 iOS 编译报错
+# 常见的编译失败
 
 ## -fobjv-weak is not supported on the current deloyment target
 
-![图1](http://upload-images.jianshu.io/upload_images/4835393-ba2de27ecedcb782.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图1](http://img.zhangpeng.site/20200324/5.jpg)
 
 **解决方案：**  
 更新 `xcodeproj` 版本。
@@ -37,7 +37,7 @@
 
 ---
 
-> Title: 常见的 iOS 编译报错
+> Title: 常见的编译失败
 >
 > Date: 2018.02.09
 >

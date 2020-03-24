@@ -1,4 +1,4 @@
-# 面试之旅
+# 面试啊面试~
 
 1. 下面代码打印 `true` 还是 `false`？
 
@@ -13,7 +13,7 @@
 
     **答案：**  
     打印 false
-    ![1.jpeg](http://upload-images.jianshu.io/upload_images/4835393-01b77d8e1c94d598.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "1.jpeg")
+    ![1.jpeg](http://img.zhangpeng.site/2017/11/09/1.jpeg)
     **分析：**  
     因为 `NSArray` 运用了类蔟 `(Class clusters)` 的设计模式，类簇其实是对现实的一种抽象和封装，基于抽象工厂模式 `(Abstract Factory Pattern)`。`NSNumber`、`NSString`、`NSArray`等均是如此。  
     如想更深入的了解相关概念，可以查阅下面两篇文章：
@@ -42,7 +42,7 @@
     ```
 
     **答案：**  
-    ![2.png](http://upload-images.jianshu.io/upload_images/4835393-9d30e93d9f53c9be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "2")
+    ![2.png](http://img.zhangpeng.site/2017/11/09/2.jpeg)
     **分析：**  
     - 集合（NSMutableSet）和数组（NSMutableArray）有相似之处，都是存储不同的对象的地址；不过NSMutableArray是有序的集合，NSMutableSet是无序的集合。
     - 集合是一种哈希表，运用散列算法，查找集合中的元素比数组速度更快，但是它没有顺序。当插入相同的数据时，不会有任何效果。
@@ -56,7 +56,7 @@
 
 ---
 
-> Title: 面试之旅
+> Title: 面试啊面试~
 >
 > Date: 2017.11.09
 >

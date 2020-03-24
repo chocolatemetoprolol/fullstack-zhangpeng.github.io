@@ -134,7 +134,7 @@ To learn more about creating a new pod, see `https://guides.cocoapods.org/making
 
 ### 编辑 YOURPODNAME.podspec
 
-```
+```vim
 Pod::Spec.new do |s|
   s.name             = '{YOURPODNAME}'
   s.version          = '0.1.0'
@@ -203,16 +203,16 @@ You can use the `--no-clean` option to inspect any issue.
 ### 提交代码
 
 ```shell
-$ git add .
-$ git commit -m "创建 pod 库"
-$ git push
+git add .
+git commit -m "创建 pod 库"
+git push
 ```
 
 ### 创建并提交 tag
 
 ```shell
-$ git tag -a 0.1.0 -m '创建 pod 库'
-$ git push origin --tags
+git tag -a 0.1.0 -m '创建 pod 库'
+git push origin --tags
 ```
 
 **注意：** 此处的 `tag` 应与 `.podspec` 文件中的 `s.version` 保持一致。每次修改 `pod` 中的代码，添加 `tag` 后，都应同时修改 `.podspec` 文件中的 `s.version`

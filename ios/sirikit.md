@@ -1,4 +1,4 @@
-# SiriKit人机界面指南
+# SiriKit 人机界面指南
 
 **本文为译文，原文连接：[Human Interface Guidelines-Siri](https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/siri/)**
 
@@ -13,6 +13,7 @@
 **不做广告。** 你的应用程序的Siri体验不应该包括广告、营销或应用内购买销售推销。
 
 ## 支持的交互
+
 提供以下服务的iOS应用程序可以与Siri集成。
 
 |    服务    | 支持的交互 |
@@ -65,7 +66,7 @@
 
 ---
 
-> Title: SiriKit人机界面指南
+> Title: SiriKit 人机界面指南
 >
 > Date: 2018.07.03
 >

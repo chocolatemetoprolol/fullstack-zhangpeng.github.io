@@ -1,4 +1,4 @@
-# Hook 系统代理方法，添加 UIScrollView 滚动停止回调
+# Hook 系统代理方法
 
 本篇文章主要叙述的是通过 **`Runtime`** 相关知识，完成对 `UIScrollView` 的代理方法进行 `hook`。从而添加一个停止滚动的回调。
 
@@ -278,7 +278,7 @@ scrollView.stopScrollBlock = ^(UIScrollView *scrollView) {
 
 ---
 
-> Title: Hook 系统代理方法，添加 UIScrollView 滚动停止回调
+> Title: Hook 系统代理方法
 >
 > Date: 2018.01.14
 >

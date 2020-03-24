@@ -4,7 +4,7 @@
 
 ### 申请 `GroupID`
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-70fdcbd9d7e3b1b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/08/29/1.jpeg)
 
 **`Description`** 填写这个 `App Group` 的描述；  
 **`ID`** 填写这个 `App Group` 的标识，建议以 `com.{aaa}.{bbb}` 命名，填写完毕时，会默认在前面加上 `group`  
@@ -13,13 +13,13 @@
 
 ### 创建完毕以后，如图所示
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-fb26bfb6954217cc.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/08/29/2.jpeg)
 
 ### 将 `group` 添加到 `App ID` 中
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-9779c179397df89e.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/08/29/3.jpeg)
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-e4b370522019e040.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/08/29/4.jpeg)
 
 ### 最后一步，重新激活下 `Provisioning Profile`
 
@@ -31,7 +31,7 @@
 
 打开 App Groups 选项，这里会显示已有的 App Groups，勾选上面创建的 App Group 即可。
 
-![image](http://upload-images.jianshu.io/upload_images/4835393-cc81c3868e580f56.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.zhangpeng.site/2017/08/29/5.jpeg)
 
 ### 点击进入 `Widget Target` 的 `General` 页
 

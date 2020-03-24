@@ -1,4 +1,4 @@
-# CocoaPods 安装及错误处理办法
+# CocoaPods 安装及错误处理
 
 ## 安装 Ruby 环境
 
@@ -94,7 +94,7 @@ rm ~/Library/Caches/CocoaPods/search_index.json
 
 ---
 
-> Title: CocoaPods 安装及错误处理办法
+> Title: CocoaPods 安装及错误处理
 >
 > Date: 2018.05.24
 >

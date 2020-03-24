@@ -1,4 +1,4 @@
-# 动态更换图标
+# 动态更换 App 图标
 
 在`iOS 10.3`苹果添加了更换图标的功能，通过这个功能，我们可以在适当的时候采取特定的方式为我们的`App`更换图标。 听似很好很方便，实则并没有。原因如下：
 
@@ -16,7 +16,7 @@
 
 将我们需要更换的图标放到我们的**项目目录**中（因为放到.xcassets中不管用），图片的命名建议以下面的方式命名，例如：xx20x20@2x.png，xx20x20@3x.png…这样在填写`Info.plist`时也会省事很多。
 
-![icon命名](http://upload-images.jianshu.io/upload_images/4835393-6a54a50322f7f7d5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![icon命名](http://img.zhangpeng.site/20200324/6.jpg)
 
 > **PS：**
 > 其实对于更换的图标，我们也可以只提供一张，但命名时，我们就不要填写具体的尺寸了，只保留图片名字即可，例如：xx@2x.png，xx@3x.png， 但是效果上可能不如准备一整套的效果好。毕竟把一张桌面图标大小的图片塞到通知图标那么小的框里，图片会压缩。
@@ -25,7 +25,7 @@
 
 想要实现换图标的功能，Info.plist 文件的修改是很重要的一步。
 
-![编辑Info.plist](http://upload-images.jianshu.io/upload_images/4835393-f259830766e162e5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编辑Info.plist](http://img.zhangpeng.site/20200324/7.jpg)
 
 > * `CFBundleIcons`:
 >   一个字典，包含所有AppIcon信息，即上图的Icon files(iOS 5)
