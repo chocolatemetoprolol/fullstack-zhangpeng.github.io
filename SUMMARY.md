@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [GitHub](https://github.com/fullstack-zhangpeng)
+* [关于我](me.md)
 * iOS
   * [读取一个带有加密印章的 PDF](ios/read-pdf-with-cryptographic-seal.md)
   * [Widget 开发-配置篇](ios/widget-configuration.md)
@@ -20,6 +20,7 @@
   * [动态更换 App 图标](ios/dynamic-icon.md)
   * [Rac EventBus RxJava](ios/rac-eventbus-rxjava.md)
   * [Block 的声明方式](ios/block-statement.md)
+  * [+load 与 +initialize](ios/load-and-initialize.md)
   * [App 沙盒](ios/sandbox.md)
   * [如何创建一个公有 Pod 库](ios/create-pod.md)
   * [类的初始化方法](ios/initializer.md)
@@ -39,7 +40,7 @@
   * [Shell 入门教程](meetandlearn/introduction-to-shell.md)
   * [如何保持 SSH 服务不掉线](meetandlearn/keep-alive-ssh.md)
 * 基础知识
-  * [URI、URL的差异与联系](basicknowledge/uri-url-urn.md)
+  * [URI、URL、URN 的差异与联系](basicknowledge/uri-url-urn.md)
   * [简明扼要带你学位运算](basicknowledge/bit-operation.md)
   * [HTTP 状态码](basicknowledge/http-status-code.md)
   * [RESTful 笔记](basicknowledge/introduction-to-restful.md)
