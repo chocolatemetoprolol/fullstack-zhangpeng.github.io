@@ -2,73 +2,73 @@
 
 ## 环境配置
 
-1. [下载安装包](https://golang.google.cn/dl/) 
+1. [下载安装包](https://golang.google.cn/dl/)
 
-2. 配置环境变量 
+2. 配置环境变量
 
-   在您所使用的 `shell` 对应的配置文件中，添加下面的内容： 
+   在您所使用的 `shell` 对应的配置文件中，添加下面的内容：
 
+   ```shell
+   export GOROOT="/usr/local/go"
+   export GOPATH="$HOME/go"
+   export PATH=$PATH:$GOPATH/bin
+   # Enable the go modules feature
+   export GO111MODULE=auto
+   # Set the GOPROXY environment variable
+   export GOPROXY=https://goproxy.io
    ```
-   export GOROOT="/usr/local/go" 
-   export GOPATH="$HOME/go" 
-   export PATH=$PATH:$GOPATH/bin 
-   # Enable the go modules feature 
-   export GO111MODULE=auto 
-   # Set the GOPROXY environment variable 
-   export GOPROXY=https://goproxy.io 
-   ```
 
-完成上面的操作后，在终端输入 `go env`，输出下面内容，就表示 go 环境配置完成： 
+完成上面的操作后，在终端输入 `go env`，输出下面内容，就表示 go 环境配置完成：
 
-```shell 
-~ go env 
-GOARCH="amd64" 
-GOBIN="" 
-GOCACHE="/Users/zhangpeng/Library/Caches/go-build" 
-GOEXE="" 
-GOFLAGS="" 
-GOHOSTARCH="amd64" 
-GOHOSTOS="darwin" 
-GOOS="darwin" 
+```shell
+~ go env
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/Users/zhangpeng/Library/Caches/go-build"
+GOEXE=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="darwin"
+GOOS="darwin"
 GOPATH="/Users/zhangpeng/go"
 GOPROXY="https://goproxy.io"
-GORACE="" 
-GOROOT="/usr/local/go" 
-GOTMPDIR="" 
-GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64" 
-GCCGO="gccgo" 
-CC="clang" 
-CXX="clang++" 
-CGO_ENABLED="1" 
-GOMOD="" 
-CGO_CFLAGS="-g -O2" 
-CGO_CPPFLAGS="" 
-CGO_CXXFLAGS="-g -O2" 
-CGO_FFLAGS="-g -O2" 
-CGO_LDFLAGS="-g -O2" 
-PKG_CONFIG="pkg-config" 
-GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/sk/qbbrttxx2j1d7bqf02wh90zm0000gn/T/go-build233880756=/tmp/go-build -gno-record-gcc-switches -fno-common" 
+GORACE=""
+GOROOT="/usr/local/go"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+GCCGO="gccgo"
+CC="clang"
+CXX="clang++"
+CGO_ENABLED="1"
+GOMOD=""
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/sk/qbbrttxx2j1d7bqf02wh90zm0000gn/T/go-build233880756=/tmp/go-build -gno-record-gcc-switches -fno-common"
 ```
 
 ## GOROOT & GOPATH
 
 * **GOROOT**
 
-  `Go` 的安装目录 
+  `Go` 的安装目录
 
-  内置的包和函数，如 `fmt` 、`math`、`strings` 等都存储在这个目录的 `src` 文件夹中 
+  内置的包和函数，如 `fmt` 、`math`、`strings` 等都存储在这个目录的 `src` 文件夹中
 
 * **GOPATH**
 
-  `Go` 的工作目录 
+  `Go` 的工作目录
 
-  **src:** 存放源代码。按照 `Go` 语言约定，`go run`，`go install` 等命令默认会在此路径下执行； 
+  **src:** 存放源代码。按照 `Go` 语言约定，`go run`，`go install` 等命令默认会在此路径下执行；
 
-  **pkg:** 存放编译时生成的中间文件（ *.a ）； 
+  **pkg:** 存放编译时生成的中间文件（ *.a ）；
 
-  **bin:** 存放编译后生成的可执行文件 （ 在项目内执行 go install，会在 bin 目录下生成一个可执行文件）。 
+  **bin:** 存放编译后生成的可执行文件 （ 在项目内执行 go install，会在 bin 目录下生成一个可执行文件）。
 
-## 常用命令 
+## 常用命令
 
 * **go run**
 
@@ -86,13 +86,13 @@ GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmess
 
   这个命令用于编译安装，可以作用于 main 包和非 main 包，然后将编译后的生成的执行文件存放到工程的 bin 目录下，将生成的归档文件（即静态链接库）存放到工程的 pkg 目录下。使用方式类似于 go build，可以在某个代码包目录下直接使用，也可以指定代码包使用。
 
-*  **go env**
+* **go env**
 
-  用于打印 `GO` 语言的环境信息，如 `GOPATH` 是工作区目录，`GOROOT` 是 `GO` 语言安装目录，`GOBIN` 是通过 `go install` 命令生成可执行文件的存放目录（默认是当前工作区的 `bin` 目录下），`GOEXE` 为生成可执行文件的后缀 
+  用于打印 `GO` 语言的环境信息，如 `GOPATH` 是工作区目录，`GOROOT` 是 `GO` 语言安装目录，`GOBIN` 是通过 `go install` 命令生成可执行文件的存放目录（默认是当前工作区的 `bin` 目录下），`GOEXE` 为生成可执行文件的后缀
 
 ## 数据类型
 
-布尔型，整型，浮点型，指针类型（Pointer）、数组类型、结构化类型(struct)、Channel 类型、函数类型、切片类型、接口类型（interface）、Map 类型 
+布尔型，整型，浮点型，指针类型（Pointer）、数组类型、结构化类型(struct)、Channel 类型、函数类型、切片类型、接口类型（interface）、Map 类型
 
 ```go
 // 布尔型
@@ -134,7 +134,7 @@ var map_variable map[key_data_type]value_data_type
 1. 先声明，后赋值
 
    ```go
-   // 声明变量，变量名放在类型前 
+   // 声明变量，变量名放在类型前
    var name string
    // 赋值
    name = "test"
@@ -143,11 +143,11 @@ var map_variable map[key_data_type]value_data_type
 2. 声明并赋值
 
    ```go
-   // 编译器会根据值自行判定变量类型 
-   // 方式1 
-   var name = "test" 
-   // 方式2 
-   name := "test" 
+   // 编译器会根据值自行判定变量类型
+   // 方式 1
+   var name = "test"
+   // 方式 2
+   name := "test"
    ```
 
 常用类型初始化方式
@@ -158,7 +158,7 @@ type Person struct {
   name string  // 姓名
   age uint32   // 年龄
   birth string  // 出生日期  用 yyyy/mm/dd 格式的字符串表示
-  height float32  // 身高 
+  height float32  // 身高
   weight float32  // 体重
 }
 // 方式1，变量 t 是一个指向 Person 的指针，此时结构体字段的值是它们所属类型的零值
@@ -189,8 +189,8 @@ if condition {
 
 eg.
 if a == 10 {
-	/* 如果条件为 true 则执行以下语句 */
-	fmt.Println("a == 10" )
+  /* 如果条件为 true 则执行以下语句 */
+  fmt.Println("a == 10" )
 }
 
 /*
@@ -203,14 +203,14 @@ if statement; condition {
 
 eg.
 if a := 1  ;  a < 10 {
-	// 如果条件为 true 则执行以下语句
-	fmt.Println("a < 10" )
+  // 如果条件为 true 则执行以下语句
+  fmt.Println("a < 10" )
 }
 ```
 
 ## 循环语句
 
-方式1
+方式 1
 
 ```go
 /*
@@ -218,7 +218,7 @@ if a := 1  ;  a < 10 {
  * condition： 关系表达式或逻辑表达式，循环控制条件；
  * post： 一般为赋值表达式，给控制变量增量或减量。
  */
-for init; condition; post { 
+for init; condition; post {
 
 }
 
@@ -259,7 +259,7 @@ go 语言中的函数是支持多返回值的
 
 ```go
 func function_name( [parameter list] ) [return_types] {
-	// 函数体
+  // 函数体
 }
 
 eg.
@@ -286,7 +286,7 @@ go 语言还有一种特殊的函数，叫做方法。一个方法就是一个�
 
 ```go
 func (variable_name variable_data_type) function_name() [return_type]{
-	/* 函数体*/
+  /* 函数体*/
 }
 
 // 我们用 面向对象的思想实现一个封装的结构体
@@ -297,22 +297,22 @@ type Person struct{
 
 // 获取姓名
 func (p *Person) GetName() string{
-	return p.name
+  return p.name
 }
 
 // 获取年龄
 func (p *Person) GetAge() uint32{
-	return p.age
+  return p.age
 }
 
 // 设置姓名
 func (p *Person) SetName(name string) {
-	p.name = name
+  p.name = name
 }
 
 // 设置年龄
 func (p *Person) SetAge(age uint32) {
-	p.age = age
+  p.age = age
 }
 ```
 
@@ -324,15 +324,15 @@ func (p *Person) SetAge(age uint32) {
 package main
 
 import (
-	"fmt"
+  "fmt"
 )
 
 // 定义除法运算函数
 func Devide(num1, num2 int) int {
   if num2 == 0 {
-  	panic("num cannot be 0") 
+    panic("num cannot be 0")
   } else {
-  	return num1 / num2
+    return num1 / num2
   }
 }
 
@@ -342,7 +342,7 @@ func main() {
 
   defer func() {
     if r := recover(); r != nil {
-    	fmt.Printf("panic的内容%v\n", r)
+      fmt.Printf("panic的内容%v\n", r)
     }
   }()
 
@@ -369,10 +369,10 @@ type oo struct {
   ss3 bool
 }
 type inner struct {
-	ss4 string
+  ss4 string
 }
 func (i *inner) testMethod () {
-	fmt.Println("testMethod is called!!!")
+  fmt.Println("testMethod is called!!!")
 }
 func main()  {
   oo1 := new(oo)
@@ -391,22 +391,22 @@ func main()  {
 ```go
 package main
 import (
-	"fmt"
+  "fmt"
 )
 type Person interface {
-	Sing ()
+  Sing ()
 }
 type Girl struct {
-	Name string
+  Name string
 }
 type Boy struct {
-	Name string
+  Name string
 }
 func (this *Girl) Sing () {
-	fmt.Println("Hi, I am  " + this.Name)
+  fmt.Println("Hi, I am  " + this.Name)
 }
 func (this *Boy) Sing () {
-	fmt.Println("Hi, I am  " + this.Name)
+  fmt.Println("Hi, I am  " + this.Name)
 }
 func main() {
   g := &Girl{"Lucy"}
@@ -417,8 +417,7 @@ func main() {
   p[1] = b
 
   for _, v := range p {
-  	v.Sing()
-  } 
+    v.Sing()
+  }
 }
 ```
-
