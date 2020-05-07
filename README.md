@@ -1,6 +1,9 @@
 # Introduction
 
 * [关于我](./me.md)
+* go
+  * [Go 1.13 中 Go command 修改](go/go-command.md)
+  * [Go 基础](go/go.md)
 * iOS
   * [读取一个带有加密印章的 PDF](ios/read-pdf-with-cryptographic-seal.md)
   * [Widget 开发-配置篇](ios/widget-configuration.md)
