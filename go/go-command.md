@@ -73,3 +73,13 @@
 [Go 1.13 Release Notes](https://golang.org/doc/go1.13)
 
 [UserConfigDir](https://golang.org/pkg/os/#UserConfigDir)
+
+---
+
+> Title: Go 1.13 中 Go command 修改
+>
+> Date: 2020.05.07
+>
+> Author: zhangpeng
+>
+> Github: <https://github.com/fullstack-zhangpeng>
