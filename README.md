@@ -37,7 +37,7 @@
 * Ubuntu
   * [Ubuntu 安装 MySQL](ubuntu/install-mysql.md)
 * 随见随学
-  * [如何清理 git 仓库](learn/judge-algorithm-quality.md)
+  * [如何清理 git 仓库](learn/clean-up-git-repository.md)
   * [如何评判算法好坏](learn/judge-algorithm-quality.md)
   * [如何保持 SSH 服务不掉线](learn/keep-alive-ssh.md)
   * [Shell 入门教程](learn/introduction-to-shell.md)
