@@ -32,3 +32,13 @@
 ## 检查是否需要安装其他依赖
 
 运行 `flutter doctor` 检查是否需要安装其他依赖。这个命令会检查你当前的配置环境，并在命令行窗口中生成一份报告。安装 Flutter 会附带安装 Dart SDK，所以不需要再对 Dart 进行单独安装。你需要仔细阅读上述命令生成的报告，看看别漏了一些需要安装的依赖，或者需要之后执行的命令（这个会以 加粗的文本 显示出来）。然后按提示安装即可。
+
+---
+
+> Title: Flutter 安装和环境配置
+>
+> Date: 2020.08.24
+>
+> Author: zhangpeng
+>
+> Github: <https://github.com/fullstack-zhangpeng>
