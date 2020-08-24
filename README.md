@@ -4,6 +4,8 @@
 * go
   * [Go 1.13 中 Go command 修改](go/go-command.md)
   * [Go 基础](go/go.md)
+* Flutter
+  * [Flutter 安装和环境配置](flutter/install-flutter.md)
 * iOS
   * [上传应用时，卡在 Authenticating with the App Store](ios/authenticating-with-the-app-store.md)
   * [类的初始化方法](ios/initializer.md)
