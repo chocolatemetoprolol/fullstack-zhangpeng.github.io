@@ -11,7 +11,8 @@
 		"pageview-count",
 		"tbfed-pagefooter",
 		"-search", 
-		"search-plus"
+		"search-plus",
+		"valine"
 	],
 	"pluginsConfig":{
 		"code": {
@@ -24,6 +25,10 @@
             "copyright": "Copyright &copy zhang peng 2019",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "valine": {
+            "appId": "Wc0xV1kr4C46mVbpgmA5jTgO-gzGzoHsz",
+            "appKey": "e1wHasMdWtVIzwqc1PhqkQh9"
         }
 	}
 }
