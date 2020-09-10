@@ -46,7 +46,7 @@
 
 通过查看文档，我们可以看到下面几个属性和方法。
 
-```objective-c
+```objc
 // If false, alternate icons are not supported for the current process.
 // 检查是否支持更换图标
 @property (readonly, nonatomic) BOOL supportsAlternateIcons NS_EXTENSION_UNAVAILABLE("Extensions may not have alternate icons") API_AVAILABLE(ios(10.3), tvos(10.2));
@@ -62,7 +62,7 @@
 
 系统提供的 API 简单明了，唯一要注意的是下面这个方法。
 
-```objective-c
+```objc
 - (void)setAlternateIconName:(nullable NSString *)alternateIconName completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler
 ```
 
@@ -73,7 +73,7 @@
 为了方便大家使用，我将更换图标相关的代码已经写好在下面，如需自取。
 也可以访问 [DynamicAppIconDemo](https://github.com/fullstack-zhangpeng/DynamicAppIconDemo)，查看 `FSAppIconManager` 类
 
-```objective-c
+```objc
 + (NSString *)getCurrentAppIconName {
     if (@available(iOS 10.3, *)) {
         return ([UIApplication sharedApplication].alternateIconName.length == 0) ? @"" : [UIApplication sharedApplication].alternateIconName;

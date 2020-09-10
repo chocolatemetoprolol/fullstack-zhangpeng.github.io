@@ -22,7 +22,7 @@
 
     当看到下面输出时，说明 `git` 已经安装完成：
 
-    ```sehll
+    ```shell
     Already downloaded: /Users/zhangpeng/Library/Caches/Homebrew/downloads/c5f94c257b885992f680bbe3c2b8ec009e8856aefebac2cc1fb6608d7f006152--git-2.20.1.mojave.bottle.2.tar.gz
     ==> Pouring git-2.20.1.mojave.bottle.2.tar.gz
     ==> Caveats

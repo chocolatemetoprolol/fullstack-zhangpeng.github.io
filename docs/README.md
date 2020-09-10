@@ -1,6 +1,5 @@
 # Introduction
 
-* [关于我](./me.md)
 * go
   * [Go 1.13 中 Go command 修改](go/go-command.md)
   * [Go 基础](go/go.md)

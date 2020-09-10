@@ -1,4 +1,4 @@
-# 利用 NSMethodSignature 和 NSInvocation 实现方法调用
+# NSMethodSignature 和 NSInvocation
 
 ## 常见的调用方法的两种方式
 
@@ -9,7 +9,7 @@
   **优点：** 在编译阶段就会教研方法是否存在，Xcode会有相应提示  
   **缺点：** 局限性大，如果想调用某个方法，必须先实现这个方法，不如 `performSelector: withObject:` 灵活。
 
-## 升级版
+## 使用 NSMethodSignature 和 NSInvocation 调用方法
 
 使用 `NSMethodSignature` 和 `NSInvocation` 组合实现方法的调用。
 
@@ -43,7 +43,7 @@ NSMethodSignature *allocSig = [NSString methodSignatureForSelector:allocSEL];
 
 `NSInvocation` 可以说是 `performSelector: withObject:` 的升级版，可以调用较为复杂的方法，进行参数、返回值的处理等;
 
-## NSMethodSignature 和 NSInvocation 搭配的使用方法
+### NSMethodSignature 和 NSInvocation 搭配的使用方法
 
 ```objc
 NSString *str = @"Test";
@@ -87,7 +87,7 @@ NSLog(@"returnValue: %@", returnValue);
 
 ---
 
-> Title: 利用 NSMethodSignature 和 NSInvocation 实现方法调用
+> Title: NSMethodSignature 和 NSInvocation
 >
 > Date: 2018.03.10
 >

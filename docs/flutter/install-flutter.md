@@ -4,7 +4,7 @@
 
 本篇文章编写时，最新的稳定版本为：**1.20.2-stable**（[点击下载](https://storage.flutter-io.cn/flutter_infra/releases/stable/macos/flutter_macos_1.20.2-stable.zip)）。
 
-如果需要其他版本，请打开[Flutter SDK 版本列表](https://flutter.cn/docs/development/tools/sdk/releases?tab=macos)，选择自己需要的版本进行下载。
+如果需要其他版本，请打开 [Flutter SDK 版本列表](https://flutter.cn/docs/development/tools/sdk/releases?tab=macos)，选择自己需要的版本进行下载。
 
 ## 将下载的文件解压到目标路径
 
