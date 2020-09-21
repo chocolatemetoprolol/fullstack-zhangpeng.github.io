@@ -9,6 +9,7 @@
 node_modules
 
 package-lock.json
+yarn.lock
 
 # vuepress build output
 docs/.vuepress/dist
