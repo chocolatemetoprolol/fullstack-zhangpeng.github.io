@@ -8,6 +8,8 @@
 ## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
 node_modules
 
+package-lock.json
+
 # vuepress build output
 docs/.vuepress/dist
 
