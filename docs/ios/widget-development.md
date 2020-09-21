@@ -61,7 +61,7 @@ self.preferredContentSize = CGSizeMake(kScreenW, 100);
 
 **设定显示模式，需要在设定 `Size` 前设定这个属性**，代码如下：
 
-```obj
+```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
     if ([[UIDevice currentDevice] systemVersion].intValue >= 10) {  
