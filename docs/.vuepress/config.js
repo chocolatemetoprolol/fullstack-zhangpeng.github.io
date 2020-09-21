@@ -6,6 +6,7 @@ module.exports = {
     ],
     theme: 'reco',
     themeConfig: {
+        subSidebar: 'auto',
         valineConfig: {
             appId: 'Wc0xV1kr4C46mVbpgmA5jTgO-gzGzoHsz',// your appId
             appKey: 'e1wHasMdWtVIzwqc1PhqkQh9', // your appKey
