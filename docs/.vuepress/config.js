@@ -82,6 +82,7 @@ module.exports = {
                 collapsable: false, // 可选的, 默认值是 true,
                 // sidebarDepth: 0,    // 可选的, 默认值是 1
                 children: [
+                    'mac/tips-for-mac',
                     'mac/update-git-version',
                     'mac/install-charles-certificate',
                     'mac/a-better-terminal',

@@ -31,6 +31,7 @@
   * [1. 两数之和](leetcode/two-sum.md)
   * [2. 有效的括号](leetcode/valid-parentheses.md)
 * Mac
+  * [Mac 的日常使用](mac/tips-for-mac.md)
   * [升级 Git 版本](mac/update-git-version.md)
   * [Charles 安装证书](mac/install-charles-certificate.md)
   * [iTerm2 一个更好用的终端](mac/a-better-terminal.md)
