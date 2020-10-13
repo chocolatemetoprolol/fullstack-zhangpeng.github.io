@@ -104,6 +104,7 @@ module.exports = {
                 collapsable: false, // 可选的, 默认值是 true,
                 // sidebarDepth: 0,    // 可选的, 默认值是 1
                 children: [
+                    'learn/tips-for-git',
                     'learn/clean-up-git-repository',
                     'learn/judge-algorithm-quality',
                     'learn/keep-alive-ssh',
