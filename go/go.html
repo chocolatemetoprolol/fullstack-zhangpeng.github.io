@@ -1,1345 +1,323 @@
-
-<!DOCTYPE HTML>
-<html lang="zh-hans" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Go 基础 · Articles</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangpeng">
-        
-        
-    
-    <link rel="stylesheet" href="../gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    
-    <link rel="prev" href="go-command.html" />
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="输入并搜索" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="../">
-            
-                <a href="../">
-            
-                    
-                    Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="../me.html">
-            
-                <a href="../me.html">
-            
-                    
-                    关于我
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" >
-            
-                <span>
-            
-                    
-                    go
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="go-command.html">
-            
-                <a href="go-command.html">
-            
-                    
-                    Go 1.13 中 Go command 修改
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.3.2" data-path="go.html">
-            
-                <a href="go.html">
-            
-                    
-                    Go 基础
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" >
-            
-                <span>
-            
-                    
-                    Flutter
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="../flutter/install-flutter.html">
-            
-                <a href="../flutter/install-flutter.html">
-            
-                    
-                    Flutter 安装和环境配置
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
-            
-                <span>
-            
-                    
-                    iOS
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" data-path="../ios/authenticating-with-the-app-store.html">
-            
-                <a href="../ios/authenticating-with-the-app-store.html">
-            
-                    
-                    上传应用时，卡在 Authenticating with the App Store
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.2" data-path="../ios/initializer.html">
-            
-                <a href="../ios/initializer.html">
-            
-                    
-                    类的初始化方法
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.3" data-path="../ios/create-pod.html">
-            
-                <a href="../ios/create-pod.html">
-            
-                    
-                    如何创建一个公有 Pod 库
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.4" data-path="../ios/sandbox.html">
-            
-                <a href="../ios/sandbox.html">
-            
-                    
-                    App 沙盒
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.5" data-path="../ios/block-statement.html">
-            
-                <a href="../ios/block-statement.html">
-            
-                    
-                    Block 的声明方式
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.6" data-path="../ios/rac-eventbus-rxjava.html">
-            
-                <a href="../ios/rac-eventbus-rxjava.html">
-            
-                    
-                    Rac EventBus RxJava
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.7" data-path="../ios/dynamic-icon.html">
-            
-                <a href="../ios/dynamic-icon.html">
-            
-                    
-                    动态更换 App 图标
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.8" data-path="../ios/sirikit.html">
-            
-                <a href="../ios/sirikit.html">
-            
-                    
-                    SiriKit 人机界面指南
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.9" data-path="../ios/gcd.html">
-            
-                <a href="../ios/gcd.html">
-            
-                    
-                    GCD 同步异步与串行并行
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.10" data-path="../ios/cocoapods.html">
-            
-                <a href="../ios/cocoapods.html">
-            
-                    
-                    CocoaPods 安装及错误处理
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.11" data-path="../ios/message-forwarding.html">
-            
-                <a href="../ios/message-forwarding.html">
-            
-                    
-                    iOS 消息转发机制
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.12" data-path="../ios/nsmethodsignature-nsinvocation.html">
-            
-                <a href="../ios/nsmethodsignature-nsinvocation.html">
-            
-                    
-                    NSMethodSignature 和 NSInvocation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.13" data-path="../ios/build-failed.html">
-            
-                <a href="../ios/build-failed.html">
-            
-                    
-                    常见的编译失败
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.14" data-path="../ios/hook-system-delegate-method.html">
-            
-                <a href="../ios/hook-system-delegate-method.html">
-            
-                    
-                    Hook 系统代理方法
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.15" data-path="../ios/create-qr-code.html">
-            
-                <a href="../ios/create-qr-code.html">
-            
-                    
-                    二维码生成及定制
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.16" data-path="../ios/wkwebview.html">
-            
-                <a href="../ios/wkwebview.html">
-            
-                    
-                    WKWebView 使用及注意事项
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.17" data-path="../ios/interview.html">
-            
-                <a href="../ios/interview.html">
-            
-                    
-                    面试啊面试~
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.18" data-path="../ios/double-to-nsstring.html">
-            
-                <a href="../ios/double-to-nsstring.html">
-            
-                    
-                    double 转 NSString 出现精度异常
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.19" data-path="../ios/widget-development.html">
-            
-                <a href="../ios/widget-development.html">
-            
-                    
-                    Widget 开发-开发篇
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.20" data-path="../ios/widget-configuration.html">
-            
-                <a href="../ios/widget-configuration.html">
-            
-                    
-                    Widget 开发-配置篇
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.21" data-path="../ios/read-pdf-with-cryptographic-seal.html">
-            
-                <a href="../ios/read-pdf-with-cryptographic-seal.html">
-            
-                    
-                    读取一个带有加密印章的 PDF
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" >
-            
-                <span>
-            
-                    
-                    LeetCode
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.1" data-path="../leetcode/two-sum.html">
-            
-                <a href="../leetcode/two-sum.html">
-            
-                    
-                    1. 两数之和
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6.2" data-path="../leetcode/valid-parentheses.html">
-            
-                <a href="../leetcode/valid-parentheses.html">
-            
-                    
-                    2. 有效的括号
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" >
-            
-                <span>
-            
-                    
-                    Mac
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.7.1" data-path="../mac/update-git-version.html">
-            
-                <a href="../mac/update-git-version.html">
-            
-                    
-                    升级 Git 版本
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.2" data-path="../mac/install-charles-certificate.html">
-            
-                <a href="../mac/install-charles-certificate.html">
-            
-                    
-                    Charles 安装证书
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.3" data-path="../mac/a-better-terminal.html">
-            
-                <a href="../mac/a-better-terminal.html">
-            
-                    
-                    iTerm2 一个更好用的终端
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7.4" data-path="../mac/reinstall-mac-system.html">
-            
-                <a href="../mac/reinstall-mac-system.html">
-            
-                    
-                    Mac 系统重装
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.8" >
-            
-                <span>
-            
-                    
-                    Ubuntu
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.8.1" data-path="../ubuntu/install-mysql.html">
-            
-                <a href="../ubuntu/install-mysql.html">
-            
-                    
-                    Ubuntu 安装 MySQL
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9" >
-            
-                <span>
-            
-                    
-                    随见随学
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.9.1" data-path="../learn/clean-up-git-repository.html">
-            
-                <a href="../learn/clean-up-git-repository.html">
-            
-                    
-                    如何清理 git 仓库
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.2" data-path="../learn/judge-algorithm-quality.html">
-            
-                <a href="../learn/judge-algorithm-quality.html">
-            
-                    
-                    如何评判算法好坏
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.3" data-path="../learn/keep-alive-ssh.html">
-            
-                <a href="../learn/keep-alive-ssh.html">
-            
-                    
-                    如何保持 SSH 服务不掉线
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.4" data-path="../learn/introduction-to-shell.html">
-            
-                <a href="../learn/introduction-to-shell.html">
-            
-                    
-                    Shell 入门教程
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.5" data-path="../learn/introduction-to-appleScript.html">
-            
-                <a href="../learn/introduction-to-appleScript.html">
-            
-                    
-                    AppleScript 入门与实践
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.9.6" data-path="../learn/set-up-hexo-blog.html">
-            
-                <a href="../learn/set-up-hexo-blog.html">
-            
-                    
-                    搭建 Hexo Blog
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10" >
-            
-                <span>
-            
-                    
-                    基础知识
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.10.1" data-path="../basicknowledge/date-formatter.html">
-            
-                <a href="../basicknowledge/date-formatter.html">
-            
-                    
-                    常用的日期格式化格式
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.2" data-path="../basicknowledge/introduction-to-restful.html">
-            
-                <a href="../basicknowledge/introduction-to-restful.html">
-            
-                    
-                    RESTful 笔记
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.3" data-path="../basicknowledge/http-status-code.html">
-            
-                <a href="../basicknowledge/http-status-code.html">
-            
-                    
-                    HTTP 状态码
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.4" data-path="../basicknowledge/bit-operation.html">
-            
-                <a href="../basicknowledge/bit-operation.html">
-            
-                    
-                    简明扼要带你学位运算
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.10.5" data-path="../basicknowledge/uri-url-urn.html">
-            
-                <a href="../basicknowledge/uri-url-urn.html">
-            
-                    
-                    URI、URL的差异与联系
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本书使用 GitBook 发布
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
-                
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Go 基础</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div class="search-plus" id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="go-&#x57FA;&#x7840;">Go &#x57FA;&#x7840;</h1>
-<h2 id="&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x73AF;&#x5883;&#x914D;&#x7F6E;</h2>
-<ol>
-<li><p><a href="https://golang.google.cn/dl/" target="_blank">&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;</a></p>
-</li>
-<li><p>&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;</p>
-<p>&#x5728;&#x60A8;&#x6240;&#x4F7F;&#x7528;&#x7684; <code>shell</code> &#x5BF9;&#x5E94;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
-<pre><code class="lang-shell">export GOROOT=&quot;/usr/local/go&quot;
-export GOPATH=&quot;$HOME/go&quot;
-export PATH=$PATH:$GOPATH/bin
-# Enable the go modules feature
-export GO111MODULE=auto
-# Set the GOPROXY environment variable
-export GOPROXY=https://goproxy.io
-</code></pre>
-</li>
-</ol>
-<p>&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x5728;&#x7EC8;&#x7AEF;&#x8F93;&#x5165; <code>go env</code>&#xFF0C;&#x8F93;&#x51FA;&#x4E0B;&#x9762;&#x5185;&#x5BB9;&#xFF0C;&#x5C31;&#x8868;&#x793A; go &#x73AF;&#x5883;&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#xFF1A;</p>
-<pre><code class="lang-shell">~ go env
-GOARCH=&quot;amd64&quot;
-GOBIN=&quot;&quot;
-GOCACHE=&quot;/Users/zhangpeng/Library/Caches/go-build&quot;
-GOEXE=&quot;&quot;
-GOFLAGS=&quot;&quot;
-GOHOSTARCH=&quot;amd64&quot;
-GOHOSTOS=&quot;darwin&quot;
-GOOS=&quot;darwin&quot;
-GOPATH=&quot;/Users/zhangpeng/go&quot;
-GOPROXY=&quot;https://goproxy.io&quot;
-GORACE=&quot;&quot;
-GOROOT=&quot;/usr/local/go&quot;
-GOTMPDIR=&quot;&quot;
-GOTOOLDIR=&quot;/usr/local/go/pkg/tool/darwin_amd64&quot;
-GCCGO=&quot;gccgo&quot;
-CC=&quot;clang&quot;
-CXX=&quot;clang++&quot;
-CGO_ENABLED=&quot;1&quot;
-GOMOD=&quot;&quot;
-CGO_CFLAGS=&quot;-g -O2&quot;
-CGO_CPPFLAGS=&quot;&quot;
-CGO_CXXFLAGS=&quot;-g -O2&quot;
-CGO_FFLAGS=&quot;-g -O2&quot;
-CGO_LDFLAGS=&quot;-g -O2&quot;
-PKG_CONFIG=&quot;pkg-config&quot;
-GOGCCFLAGS=&quot;-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/sk/qbbrttxx2j1d7bqf02wh90zm0000gn/T/go-build233880756=/tmp/go-build -gno-record-gcc-switches -fno-common&quot;
-</code></pre>
-<h2 id="goroot--gopath">GOROOT &amp; GOPATH</h2>
-<ul>
-<li><p><strong>GOROOT</strong></p>
-<p><code>Go</code> &#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;</p>
-<p>&#x5185;&#x7F6E;&#x7684;&#x5305;&#x548C;&#x51FD;&#x6570;&#xFF0C;&#x5982; <code>fmt</code> &#x3001;<code>math</code>&#x3001;<code>strings</code> &#x7B49;&#x90FD;&#x5B58;&#x50A8;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x7684; <code>src</code> &#x6587;&#x4EF6;&#x5939;&#x4E2D;</p>
-</li>
-<li><p><strong>GOPATH</strong></p>
-<p><code>Go</code> &#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</p>
-<p><strong>src:</strong> &#x5B58;&#x653E;&#x6E90;&#x4EE3;&#x7801;&#x3002;&#x6309;&#x7167; <code>Go</code> &#x8BED;&#x8A00;&#x7EA6;&#x5B9A;&#xFF0C;<code>go run</code>&#xFF0C;<code>go install</code> &#x7B49;&#x547D;&#x4EE4;&#x9ED8;&#x8BA4;&#x4F1A;&#x5728;&#x6B64;&#x8DEF;&#x5F84;&#x4E0B;&#x6267;&#x884C;&#xFF1B;</p>
-<p><strong>pkg:</strong> &#x5B58;&#x653E;&#x7F16;&#x8BD1;&#x65F6;&#x751F;&#x6210;&#x7684;&#x4E2D;&#x95F4;&#x6587;&#x4EF6;&#xFF08; *.a &#xFF09;&#xFF1B;</p>
-<p><strong>bin:</strong> &#x5B58;&#x653E;&#x7F16;&#x8BD1;&#x540E;&#x751F;&#x6210;&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6; &#xFF08; &#x5728;&#x9879;&#x76EE;&#x5185;&#x6267;&#x884C; go install&#xFF0C;&#x4F1A;&#x5728; bin &#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF09;&#x3002;</p>
-</li>
-</ul>
-<h2 id="&#x5E38;&#x7528;&#x547D;&#x4EE4;">&#x5E38;&#x7528;&#x547D;&#x4EE4;</h2>
-<ul>
-<li><p><strong>go run</strong></p>
-<p>&#x7F16;&#x8BD1;&#x5E76;&#x6267;&#x884C;&#xFF0C;&#x53EA;&#x80FD;&#x4F5C;&#x7528;&#x4E8E;&#x547D;&#x4EE4;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x4E2D;&#x5FEB;&#x901F;&#x6D4B;&#x8BD5;&#x3002;&#x4E0A;&#x6587;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x6267;&#x884C; go run test.go &#xFF0C;&#x5B8C;&#x6210;&#x4E86;&#x7A0B;&#x5E8F;&#x7684;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;</p>
-</li>
-<li><p><strong>go build</strong></p>
-<p>&#x7F16;&#x8BD1;&#x4EE3;&#x7801;&#x5305;&#x6216;&#x8005;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5E26;&#x4E0A;&#x4EE3;&#x7801;&#x5305;&#x540D;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x7F16;&#x8BD1;&#x6307;&#x5B9A;&#x7684;&#x4EE3;&#x7801;&#x5305;&#xFF1B;&#x5982;&#x679C;&#x5E26;&#x4E0A;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x7F16;&#x8BD1;&#x6307;&#x5B9A;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#x3002;</p>
-</li>
-<li><p><strong>go get</strong></p>
-<p>&#x4E0B;&#x8F7D;&#x7B2C;&#x4E09;&#x65B9;&#x4EE3;&#x7801;&#x5305;&#x5E76;&#x7F16;&#x8BD1;&#x5B89;&#x88C5; &#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5B83;&#x4F1A;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5230; GOPATH &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x914D;&#x7F6E;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x533A;&#x4E2D;&#x3002;</p>
-</li>
-<li><p><strong>go install</strong></p>
-<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x7F16;&#x8BD1;&#x5B89;&#x88C5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E; main &#x5305;&#x548C;&#x975E; main &#x5305;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x751F;&#x6210;&#x7684;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x5230;&#x5DE5;&#x7A0B;&#x7684; bin &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5C06;&#x751F;&#x6210;&#x7684;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF08;&#x5373;&#x9759;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#xFF09;&#x5B58;&#x653E;&#x5230;&#x5DE5;&#x7A0B;&#x7684; pkg &#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x4E8E; go build&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E2A;&#x4EE3;&#x7801;&#x5305;&#x76EE;&#x5F55;&#x4E0B;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4EE3;&#x7801;&#x5305;&#x4F7F;&#x7528;&#x3002;</p>
-</li>
-<li><p><strong>go env</strong></p>
-<p>&#x7528;&#x4E8E;&#x6253;&#x5370; <code>GO</code> &#x8BED;&#x8A00;&#x7684;&#x73AF;&#x5883;&#x4FE1;&#x606F;&#xFF0C;&#x5982; <code>GOPATH</code> &#x662F;&#x5DE5;&#x4F5C;&#x533A;&#x76EE;&#x5F55;&#xFF0C;<code>GOROOT</code> &#x662F; <code>GO</code> &#x8BED;&#x8A00;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF0C;<code>GOBIN</code> &#x662F;&#x901A;&#x8FC7; <code>go install</code> &#x547D;&#x4EE4;&#x751F;&#x6210;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x7684;&#x5B58;&#x653E;&#x76EE;&#x5F55;&#xFF08;&#x9ED8;&#x8BA4;&#x662F;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x533A;&#x7684; <code>bin</code> &#x76EE;&#x5F55;&#x4E0B;&#xFF09;&#xFF0C;<code>GOEXE</code> &#x4E3A;&#x751F;&#x6210;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x7684;&#x540E;&#x7F00;</p>
-</li>
-</ul>
-<h2 id="&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
-<p>&#x5E03;&#x5C14;&#x578B;&#xFF0C;&#x6574;&#x578B;&#xFF0C;&#x6D6E;&#x70B9;&#x578B;&#xFF0C;&#x6307;&#x9488;&#x7C7B;&#x578B;&#xFF08;Pointer&#xFF09;&#x3001;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x3001;&#x7ED3;&#x6784;&#x5316;&#x7C7B;&#x578B;(struct)&#x3001;Channel &#x7C7B;&#x578B;&#x3001;&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x3001;&#x5207;&#x7247;&#x7C7B;&#x578B;&#x3001;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#xFF08;interface&#xFF09;&#x3001;Map &#x7C7B;&#x578B;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// &#x5E03;&#x5C14;&#x578B;</span>
-<span class="hljs-keyword">bool</span>
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// &#x6574;&#x578B;</span>
-<span class="hljs-keyword">int8</span> <span class="hljs-keyword">int16</span> <span class="hljs-keyword">int32</span> <span class="hljs-keyword">int64</span>
-<span class="hljs-keyword">uint8</span> <span class="hljs-keyword">uint16</span> <span class="hljs-keyword">uint32</span> <span class="hljs-keyword">uint64</span>
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// &#x6D6E;&#x70B9;&#x578B;</span>
-<span class="hljs-keyword">float32</span> <span class="hljs-keyword">float64</span>
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;</span>
-<span class="hljs-keyword">string</span>
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// &#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x7ED3;&#x6784;&#x4F53;&#x662F;&#x7531;&#x4E00;&#x7CFB;&#x5217;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x6216;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x6784;&#x6210;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5408;</span>
-<span class="hljs-comment">// &#x7528;&#x7ED3;&#x6784;&#x4F53;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x67D0;&#x4E00;&#x7279;&#x5F81;&#x7684;&#x5BF9;&#x8C61;</span>
-<span class="hljs-keyword">type</span> identifier <span class="hljs-keyword">struct</span> {
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Go 基础 | blog</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    
+    <meta name="description" content="Just a blog site">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.a555611f.css" as="style"><link rel="preload" href="/assets/js/app.2d13e179.js" as="script"><link rel="preload" href="/assets/js/3.5c4220a4.js" as="script"><link rel="preload" href="/assets/js/1.e1e7594c.js" as="script"><link rel="preload" href="/assets/js/19.b5c49043.js" as="script"><link rel="prefetch" href="/assets/js/10.2bbf1c0a.js"><link rel="prefetch" href="/assets/js/11.35556b02.js"><link rel="prefetch" href="/assets/js/12.0a09b009.js"><link rel="prefetch" href="/assets/js/13.7357b6a1.js"><link rel="prefetch" href="/assets/js/14.ab3080ad.js"><link rel="prefetch" href="/assets/js/15.54aa8d0f.js"><link rel="prefetch" href="/assets/js/16.5f84513f.js"><link rel="prefetch" href="/assets/js/17.17dc11b7.js"><link rel="prefetch" href="/assets/js/18.2f100369.js"><link rel="prefetch" href="/assets/js/20.ccf92539.js"><link rel="prefetch" href="/assets/js/21.e1e93d13.js"><link rel="prefetch" href="/assets/js/22.67b1a54f.js"><link rel="prefetch" href="/assets/js/23.582ae47a.js"><link rel="prefetch" href="/assets/js/24.fd83620b.js"><link rel="prefetch" href="/assets/js/25.3f7e7e48.js"><link rel="prefetch" href="/assets/js/26.1f3dca34.js"><link rel="prefetch" href="/assets/js/27.02804b82.js"><link rel="prefetch" href="/assets/js/28.0b9b43cf.js"><link rel="prefetch" href="/assets/js/29.2b5d13dc.js"><link rel="prefetch" href="/assets/js/30.66c6c829.js"><link rel="prefetch" href="/assets/js/31.735ab463.js"><link rel="prefetch" href="/assets/js/32.f06edf29.js"><link rel="prefetch" href="/assets/js/33.5b7b163d.js"><link rel="prefetch" href="/assets/js/34.56621992.js"><link rel="prefetch" href="/assets/js/35.d0915cf9.js"><link rel="prefetch" href="/assets/js/36.cec5178f.js"><link rel="prefetch" href="/assets/js/37.47dfe25e.js"><link rel="prefetch" href="/assets/js/38.7bc0979b.js"><link rel="prefetch" href="/assets/js/39.a72dc940.js"><link rel="prefetch" href="/assets/js/4.5c64445a.js"><link rel="prefetch" href="/assets/js/40.a63e9dc1.js"><link rel="prefetch" href="/assets/js/41.55983c1b.js"><link rel="prefetch" href="/assets/js/42.f8bdfa0c.js"><link rel="prefetch" href="/assets/js/43.f88c2340.js"><link rel="prefetch" href="/assets/js/44.cc00f5ed.js"><link rel="prefetch" href="/assets/js/45.06bd7fdd.js"><link rel="prefetch" href="/assets/js/46.23085cde.js"><link rel="prefetch" href="/assets/js/47.ab110359.js"><link rel="prefetch" href="/assets/js/48.56f42859.js"><link rel="prefetch" href="/assets/js/49.967d42bc.js"><link rel="prefetch" href="/assets/js/5.05fa4975.js"><link rel="prefetch" href="/assets/js/50.af70db17.js"><link rel="prefetch" href="/assets/js/51.d3e2bb94.js"><link rel="prefetch" href="/assets/js/52.f67c2788.js"><link rel="prefetch" href="/assets/js/53.17f3dbd6.js"><link rel="prefetch" href="/assets/js/54.126f9cfb.js"><link rel="prefetch" href="/assets/js/55.020193c0.js"><link rel="prefetch" href="/assets/js/56.0b83f89a.js"><link rel="prefetch" href="/assets/js/57.0d77d7e2.js"><link rel="prefetch" href="/assets/js/58.f6bd74c2.js"><link rel="prefetch" href="/assets/js/59.682ba896.js"><link rel="prefetch" href="/assets/js/6.16f45c36.js"><link rel="prefetch" href="/assets/js/7.84d39ee3.js"><link rel="prefetch" href="/assets/js/8.95e6d396.js"><link rel="prefetch" href="/assets/js/9.3512f750.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a555611f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zhangpeng</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  Home
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link"><i class="iconfont undefined"></i>
+  About
+</a></div><div class="nav-item"><a href="https://github.com/fullstack-zhangpeng" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><!----> <h3 class="name" data-v-ca798c94>
+    zhangpeng
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>0</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>0</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  Home
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link"><i class="iconfont undefined"></i>
+  About
+</a></div><div class="nav-item"><a href="https://github.com/fullstack-zhangpeng" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Golang</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/go/go-command.html" class="sidebar-link">Go 1.13 中 Go command 修改</a></li><li><a href="/go/go.html" aria-current="page" class="active sidebar-link">Go 基础</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Flutter</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/flutter/install-flutter.html" class="sidebar-link">Flutter 安装和环境配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>iOS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ios/initializer.html" class="sidebar-link">类的初始化方法</a></li><li><a href="/ios/create-pod.html" class="sidebar-link">如何创建一个公有 Pod 库</a></li><li><a href="/ios/sandbox.html" class="sidebar-link">App 沙盒</a></li><li><a href="/ios/block-statement.html" class="sidebar-link">Block 的声明方式</a></li><li><a href="/ios/rac-eventbus-rxjava.html" class="sidebar-link">Rac EventBus RxJava</a></li><li><a href="/ios/dynamic-icon.html" class="sidebar-link">动态更换 App 图标</a></li><li><a href="/ios/sirikit.html" class="sidebar-link">SiriKit 人机界面指南</a></li><li><a href="/ios/gcd.html" class="sidebar-link">GCD 同步异步与串行并行</a></li><li><a href="/ios/cocoapods.html" class="sidebar-link">CocoaPods 安装及错误处理</a></li><li><a href="/ios/message-forwarding.html" class="sidebar-link">iOS 消息转发机制</a></li><li><a href="/ios/nsmethodsignature-nsinvocation.html" class="sidebar-link">NSMethodSignature 和 NSInvocation</a></li><li><a href="/ios/build-failed.html" class="sidebar-link">常见的编译失败</a></li><li><a href="/ios/hook-system-delegate-method.html" class="sidebar-link">Hook 系统代理方法</a></li><li><a href="/ios/create-qr-code.html" class="sidebar-link">二维码生成及定制</a></li><li><a href="/ios/wkwebview.html" class="sidebar-link">WKWebView 使用及注意事项</a></li><li><a href="/ios/interview.html" class="sidebar-link">面试啊面试~</a></li><li><a href="/ios/double-to-nsstring.html" class="sidebar-link">double 转 NSString 出现精度异常</a></li><li><a href="/ios/widget-development.html" class="sidebar-link">Widget 开发-开发篇</a></li><li><a href="/ios/widget-configuration.html" class="sidebar-link">Widget 开发-配置篇</a></li><li><a href="/ios/read-pdf-with-cryptographic-seal.html" class="sidebar-link">读取一个带有加密印章的 PDF</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>LeetCode</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/leetcode/two-sum.html" class="sidebar-link">两数之和</a></li><li><a href="/leetcode/valid-parentheses.html" class="sidebar-link">有效的括号</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Mac</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mac/tips-for-mac.html" class="sidebar-link">Mac 的日常使用</a></li><li><a href="/mac/update-git-version.html" class="sidebar-link">Mac 升级 Git 版本</a></li><li><a href="/mac/install-charles-certificate.html" class="sidebar-link">Charles 安装证书</a></li><li><a href="/mac/a-better-terminal.html" class="sidebar-link">iTerm2 一个更好用的终端</a></li><li><a href="/mac/reinstall-mac-system.html" class="sidebar-link">Mac 系统重装</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Ubuntu</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ubuntu/install-mysql.html" class="sidebar-link">Ubuntu 安装 MySQL</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>随见随学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/learn/tips-for-git.html" class="sidebar-link">Git 的日常使用</a></li><li><a href="/learn/clean-up-git-repository.html" class="sidebar-link">如何清理 Git 仓库</a></li><li><a href="/learn/judge-algorithm-quality.html" class="sidebar-link">如何评判算法好坏</a></li><li><a href="/learn/keep-alive-ssh.html" class="sidebar-link">如何保持 SSH 服务不掉线</a></li><li><a href="/learn/introduction-to-shell.html" class="sidebar-link">Shell 入门教程</a></li><li><a href="/learn/introduction-to-appleScript.html" class="sidebar-link">AppleScript 入门与实践</a></li><li><a href="/learn/set-up-hexo-blog.html" class="sidebar-link">搭建 Hexo Blog</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>基础知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/basicknowledge/date-formatter.html" class="sidebar-link">常用的日期格式化格式</a></li><li><a href="/basicknowledge/introduction-to-restful.html" class="sidebar-link">RESTful 笔记</a></li><li><a href="/basicknowledge/http-status-code.html" class="sidebar-link">HTTP 状态码</a></li><li><a href="/basicknowledge/bit-operation.html" class="sidebar-link">简明扼要带你学位运算</a></li><li><a href="/basicknowledge/uri-url-urn.html" class="sidebar-link">URI、URL、URN 的差异与联系</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zhangpeng</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">Go 基础</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>zhangpeng</span></i> <!----> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/go/go.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="go-基础"><a href="#go-基础" class="header-anchor">#</a> Go 基础</h1> <h2 id="环境配置"><a href="#环境配置" class="header-anchor">#</a> 环境配置</h2> <ol><li><p><a href="https://golang.google.cn/dl/" target="_blank" rel="noopener noreferrer">下载安装包<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>配置环境变量</p> <p>在您所使用的 <code>shell</code> 对应的配置文件中，添加下面的内容：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">GOROOT</span><span class="token operator">=</span><span class="token string">&quot;/usr/local/go&quot;</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">GOPATH</span><span class="token operator">=</span><span class="token string">&quot;<span class="token environment constant">$HOME</span>/go&quot;</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$GOPATH</span>/bin
+<span class="token comment"># Enable the go modules feature</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">GO111MODULE</span><span class="token operator">=</span>auto
+<span class="token comment"># Set the GOPROXY environment variable</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">GOPROXY</span><span class="token operator">=</span>https://goproxy.io
+</code></pre></div></li></ol> <p>完成上面的操作后，在终端输入 <code>go env</code>，输出下面内容，就表示 go 环境配置完成：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>~ go <span class="token function">env</span>
+<span class="token assign-left variable">GOARCH</span><span class="token operator">=</span><span class="token string">&quot;amd64&quot;</span>
+<span class="token assign-left variable">GOBIN</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">GOCACHE</span><span class="token operator">=</span><span class="token string">&quot;/Users/zhangpeng/Library/Caches/go-build&quot;</span>
+<span class="token assign-left variable">GOEXE</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">GOFLAGS</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">GOHOSTARCH</span><span class="token operator">=</span><span class="token string">&quot;amd64&quot;</span>
+<span class="token assign-left variable">GOHOSTOS</span><span class="token operator">=</span><span class="token string">&quot;darwin&quot;</span>
+<span class="token assign-left variable">GOOS</span><span class="token operator">=</span><span class="token string">&quot;darwin&quot;</span>
+<span class="token assign-left variable">GOPATH</span><span class="token operator">=</span><span class="token string">&quot;/Users/zhangpeng/go&quot;</span>
+<span class="token assign-left variable">GOPROXY</span><span class="token operator">=</span><span class="token string">&quot;https://goproxy.io&quot;</span>
+<span class="token assign-left variable">GORACE</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">GOROOT</span><span class="token operator">=</span><span class="token string">&quot;/usr/local/go&quot;</span>
+<span class="token assign-left variable">GOTMPDIR</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">GOTOOLDIR</span><span class="token operator">=</span><span class="token string">&quot;/usr/local/go/pkg/tool/darwin_amd64&quot;</span>
+<span class="token assign-left variable">GCCGO</span><span class="token operator">=</span><span class="token string">&quot;gccgo&quot;</span>
+<span class="token assign-left variable">CC</span><span class="token operator">=</span><span class="token string">&quot;clang&quot;</span>
+<span class="token assign-left variable">CXX</span><span class="token operator">=</span><span class="token string">&quot;clang++&quot;</span>
+<span class="token assign-left variable">CGO_ENABLED</span><span class="token operator">=</span><span class="token string">&quot;1&quot;</span>
+<span class="token assign-left variable">GOMOD</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">CGO_CFLAGS</span><span class="token operator">=</span><span class="token string">&quot;-g -O2&quot;</span>
+<span class="token assign-left variable">CGO_CPPFLAGS</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+<span class="token assign-left variable">CGO_CXXFLAGS</span><span class="token operator">=</span><span class="token string">&quot;-g -O2&quot;</span>
+<span class="token assign-left variable">CGO_FFLAGS</span><span class="token operator">=</span><span class="token string">&quot;-g -O2&quot;</span>
+<span class="token assign-left variable">CGO_LDFLAGS</span><span class="token operator">=</span><span class="token string">&quot;-g -O2&quot;</span>
+<span class="token assign-left variable">PKG_CONFIG</span><span class="token operator">=</span><span class="token string">&quot;pkg-config&quot;</span>
+<span class="token assign-left variable">GOGCCFLAGS</span><span class="token operator">=</span><span class="token string">&quot;-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/sk/qbbrttxx2j1d7bqf02wh90zm0000gn/T/go-build233880756=/tmp/go-build -gno-record-gcc-switches -fno-common&quot;</span>
+</code></pre></div><h2 id="goroot-gopath"><a href="#goroot-gopath" class="header-anchor">#</a> GOROOT &amp; GOPATH</h2> <ul><li><p><strong>GOROOT</strong></p> <p><code>Go</code> 的安装目录</p> <p>内置的包和函数，如 <code>fmt</code> 、<code>math</code>、<code>strings</code> 等都存储在这个目录的 <code>src</code> 文件夹中</p></li> <li><p><strong>GOPATH</strong></p> <p><code>Go</code> 的工作目录</p> <p><strong>src:</strong> 存放源代码。按照 <code>Go</code> 语言约定，<code>go run</code>，<code>go install</code> 等命令默认会在此路径下执行；</p> <p><strong>pkg:</strong> 存放编译时生成的中间文件（ *.a ）；</p> <p><strong>bin:</strong> 存放编译后生成的可执行文件 （ 在项目内执行 go install，会在 bin 目录下生成一个可执行文件）。</p></li></ul> <h2 id="常用命令"><a href="#常用命令" class="header-anchor">#</a> 常用命令</h2> <ul><li><p><strong>go run</strong></p> <p>编译并执行，只能作用于命令源码文件，一般用于开发中快速测试。上文我们通过执行 go run test.go ，完成了程序的编译运行。</p></li> <li><p><strong>go build</strong></p> <p>编译代码包或者源码文件。如果带上代码包名，则表示编译指定的代码包；如果带上源码文件，则表示编译指定源码文件。</p></li> <li><p><strong>go get</strong></p> <p>下载第三方代码包并编译安装 ，需要注意的是，它会下载安装到 GOPATH 环境变量配置的第一个工作区中。</p></li> <li><p><strong>go install</strong></p> <p>这个命令用于编译安装，可以作用于 main 包和非 main 包，然后将编译后的生成的执行文件存放到工程的 bin 目录下，将生成的归档文件（即静态链接库）存放到工程的 pkg 目录下。使用方式类似于 go build，可以在某个代码包目录下直接使用，也可以指定代码包使用。</p></li> <li><p><strong>go env</strong></p> <p>用于打印 <code>GO</code> 语言的环境信息，如 <code>GOPATH</code> 是工作区目录，<code>GOROOT</code> 是 <code>GO</code> 语言安装目录，<code>GOBIN</code> 是通过 <code>go install</code> 命令生成可执行文件的存放目录（默认是当前工作区的 <code>bin</code> 目录下），<code>GOEXE</code> 为生成可执行文件的后缀</p></li></ul> <h2 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h2> <p>布尔型，整型，浮点型，指针类型（Pointer）、数组类型、结构化类型(struct)、Channel 类型、函数类型、切片类型、接口类型（interface）、Map 类型</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 布尔型</span>
+<span class="token builtin">bool</span>
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// 整型</span>
+<span class="token builtin">int8</span> <span class="token builtin">int16</span> <span class="token builtin">int32</span> <span class="token builtin">int64</span>
+<span class="token builtin">uint8</span> <span class="token builtin">uint16</span> <span class="token builtin">uint32</span> <span class="token builtin">uint64</span>
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// 浮点型</span>
+<span class="token builtin">float32</span> <span class="token builtin">float64</span>
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// 字符串</span>
+<span class="token builtin">string</span>
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// 结构体，结构体是由一系列具有相同类型或不同类型的数据构成的数据集合</span>
+<span class="token comment">// 用结构体可以表示一个具有某一特征的对象</span>
+<span class="token keyword">type</span> identifier <span class="token keyword">struct</span> <span class="token punctuation">{</span>
   field1 type1
   field2 type2
-}
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// &#x6570;&#x7EC4;&#xFF0C;&#x6709;&#x5E8F;&#x7684;&#x5143;&#x7D20;&#x5E8F;&#x5217;</span>
-<span class="hljs-comment">// &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x5373;&#x53EF;&#x5BF9;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x8D4B;&#x503C;</span>
-<span class="hljs-keyword">var</span> variable_name [SIZE] variable_type
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// &#x5207;&#x7247;&#xFF0C;&#x7C7B;&#x4F3C;&quot;&#x52A8;&#x6001;&#x6570;&#x7EC4;&quot;&#x7ED3;&#x6784;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</span>
-<span class="hljs-comment">// &#x672C;&#x8D28;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x5BF9;&#x6570;&#x7EC4;&#x64CD;&#x4F5C;&#x7684;&#x5C01;&#x88C5;&#x3002;</span>
-<span class="hljs-keyword">var</span> identifier []<span class="hljs-keyword">type</span>
-<span class="hljs-comment">// -------------------------------------------------------</span>
-<span class="hljs-comment">// map</span>
-<span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x521D;&#x59CB;&#x5316; map&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; nil map&#x3002;nil map &#x4E0D;&#x80FD;&#x7528;&#x6765;&#x5B58;&#x653E;&#x952E;&#x503C;&#x5BF9;</span>
-<span class="hljs-comment">// &#x5BF9;&#x4E8E; map &#x7C7B;&#x578B;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x518D;&#x8D4B;&#x503C;</span>
-<span class="hljs-keyword">var</span> map_variable <span class="hljs-keyword">map</span>[key_data_type]value_data_type
-</code></pre>
-<h2 id="&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x8D4B;&#x503C;">&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x8D4B;&#x503C;</h2>
-<ol>
-<li><p>&#x5148;&#x58F0;&#x660E;&#xFF0C;&#x540E;&#x8D4B;&#x503C;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// &#x58F0;&#x660E;&#x53D8;&#x91CF;&#xFF0C;&#x53D8;&#x91CF;&#x540D;&#x653E;&#x5728;&#x7C7B;&#x578B;&#x524D;</span>
-<span class="hljs-keyword">var</span> name <span class="hljs-keyword">string</span>
-<span class="hljs-comment">// &#x8D4B;&#x503C;</span>
-name = <span class="hljs-string">&quot;test&quot;</span>
-</code></pre>
-</li>
-<li><p>&#x58F0;&#x660E;&#x5E76;&#x8D4B;&#x503C;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// &#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x6839;&#x636E;&#x503C;&#x81EA;&#x884C;&#x5224;&#x5B9A;&#x53D8;&#x91CF;&#x7C7B;&#x578B;</span>
-<span class="hljs-comment">// &#x65B9;&#x5F0F; 1</span>
-<span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;test&quot;</span>
-<span class="hljs-comment">// &#x65B9;&#x5F0F; 2</span>
-name := <span class="hljs-string">&quot;test&quot;</span>
-</code></pre>
-</li>
-</ol>
-<p>&#x5E38;&#x7528;&#x7C7B;&#x578B;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x5F0F;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// &#x7ED3;&#x6784;&#x4F53;</span>
-<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span> {
-  name <span class="hljs-keyword">string</span>  <span class="hljs-comment">// &#x59D3;&#x540D;</span>
-  age <span class="hljs-keyword">uint32</span>   <span class="hljs-comment">// &#x5E74;&#x9F84;</span>
-  birth <span class="hljs-keyword">string</span>  <span class="hljs-comment">// &#x51FA;&#x751F;&#x65E5;&#x671F;  &#x7528; yyyy/mm/dd &#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;</span>
-  height <span class="hljs-keyword">float32</span>  <span class="hljs-comment">// &#x8EAB;&#x9AD8;</span>
-  weight <span class="hljs-keyword">float32</span>  <span class="hljs-comment">// &#x4F53;&#x91CD;</span>
-}
-<span class="hljs-comment">// &#x65B9;&#x5F0F;1&#xFF0C;&#x53D8;&#x91CF; t &#x662F;&#x4E00;&#x4E2A;&#x6307;&#x5411; Person &#x7684;&#x6307;&#x9488;&#xFF0C;&#x6B64;&#x65F6;&#x7ED3;&#x6784;&#x4F53;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x662F;&#x5B83;&#x4EEC;&#x6240;&#x5C5E;&#x7C7B;&#x578B;&#x7684;&#x96F6;&#x503C;</span>
-t := <span class="hljs-built_in">new</span>(Person)
-<span class="hljs-comment">// &#x65B9;&#x5F0F;2&#xFF0C;&#x5E95;&#x5C42;&#x4ECD;&#x7136;&#x4F1A;&#x8C03;&#x7528; new ()&#xFF0C;&#x8FD9;&#x91CC;&#x503C;&#x7684;&#x987A;&#x5E8F;&#x5FC5;&#x987B;&#x6309;&#x7167;&#x5B57;&#x6BB5;&#x987A;&#x5E8F;&#x6765;&#x5199;</span>
-person : &amp;Person {name : <span class="hljs-string">&quot;juejin&quot;</span>, age : <span class="hljs-number">12</span>}
-<span class="hljs-comment">//----------------------------------</span>
-<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x6570;&#x7EC4;</span>
-<span class="hljs-keyword">var</span> array = [<span class="hljs-number">5</span>]<span class="hljs-keyword">string</span>{ <span class="hljs-string">&quot;go&quot;</span>, <span class="hljs-string">&quot;java&quot;</span>, <span class="hljs-string">&quot;c++&quot;</span> }
-array = [<span class="hljs-number">10</span>] <span class="hljs-keyword">int64</span> {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>}
-<span class="hljs-comment">//----------------------------------</span>
-<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316; int64 &#x7C7B;&#x578B;&#x7684;&#x5207;&#x7247;</span>
-array = <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int64</span>, <span class="hljs-number">10</span>)
-<span class="hljs-comment">//----------------------------------</span>
-<span class="hljs-comment">// map</span>
-dataMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">string</span>)
-</code></pre>
-<h2 id="&#x6761;&#x4EF6;&#x8BED;&#x53E5;">&#x6761;&#x4EF6;&#x8BED;&#x53E5;</h2>
-<pre><code class="lang-go"><span class="hljs-comment">/*
- * condition: &#x5173;&#x7CFB;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x6761;&#x4EF6;
+<span class="token punctuation">}</span>
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// 数组，有序的元素序列</span>
+<span class="token comment">// 可以通过访问数组下标即可对数组元素进行赋值</span>
+<span class="token keyword">var</span> variable_name <span class="token punctuation">[</span>SIZE<span class="token punctuation">]</span> variable_type
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// 切片，类似&quot;动态数组&quot;结构的数据类型</span>
+<span class="token comment">// 本质是一个数据结构，实现了对数组操作的封装。</span>
+<span class="token keyword">var</span> identifier <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token keyword">type</span>
+<span class="token comment">// -------------------------------------------------------</span>
+<span class="token comment">// map</span>
+<span class="token comment">// 如果不初始化 map，那么就会创建一个 nil map。nil map 不能用来存放键值对</span>
+<span class="token comment">// 对于 map 类型，一定要进行初始化再赋值</span>
+<span class="token keyword">var</span> map_variable <span class="token keyword">map</span><span class="token punctuation">[</span>key_data_type<span class="token punctuation">]</span>value_data_type
+</code></pre></div><h2 id="变量声明赋值"><a href="#变量声明赋值" class="header-anchor">#</a> 变量声明赋值</h2> <ol><li><p>先声明，后赋值</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 声明变量，变量名放在类型前</span>
+<span class="token keyword">var</span> name <span class="token builtin">string</span>
+<span class="token comment">// 赋值</span>
+name <span class="token operator">=</span> <span class="token string">&quot;test&quot;</span>
+</code></pre></div></li> <li><p>声明并赋值</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 编译器会根据值自行判定变量类型</span>
+<span class="token comment">// 方式 1</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;test&quot;</span>
+<span class="token comment">// 方式 2</span>
+name <span class="token operator">:=</span> <span class="token string">&quot;test&quot;</span>
+</code></pre></div></li></ol> <p>常用类型初始化方式</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 结构体</span>
+<span class="token keyword">type</span> Person <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+  name <span class="token builtin">string</span>  <span class="token comment">// 姓名</span>
+  age <span class="token builtin">uint32</span>   <span class="token comment">// 年龄</span>
+  birth <span class="token builtin">string</span>  <span class="token comment">// 出生日期  用 yyyy/mm/dd 格式的字符串表示</span>
+  height <span class="token builtin">float32</span>  <span class="token comment">// 身高</span>
+  weight <span class="token builtin">float32</span>  <span class="token comment">// 体重</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 方式1，变量 t 是一个指向 Person 的指针，此时结构体字段的值是它们所属类型的零值</span>
+t <span class="token operator">:=</span> <span class="token function">new</span><span class="token punctuation">(</span>Person<span class="token punctuation">)</span>
+<span class="token comment">// 方式2，底层仍然会调用 new ()，这里值的顺序必须按照字段顺序来写</span>
+person <span class="token punctuation">:</span> <span class="token operator">&amp;</span>Person <span class="token punctuation">{</span>name <span class="token punctuation">:</span> <span class="token string">&quot;juejin&quot;</span><span class="token punctuation">,</span> age <span class="token punctuation">:</span> <span class="token number">12</span><span class="token punctuation">}</span>
+<span class="token comment">//----------------------------------</span>
+<span class="token comment">// 初始化数组</span>
+<span class="token keyword">var</span> array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span> <span class="token string">&quot;go&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;java&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;c++&quot;</span> <span class="token punctuation">}</span>
+array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token builtin">int64</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">}</span>
+<span class="token comment">//----------------------------------</span>
+<span class="token comment">// 初始化 int64 类型的切片</span>
+array <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int64</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token comment">//----------------------------------</span>
+<span class="token comment">// map</span>
+dataMap <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="条件语句"><a href="#条件语句" class="header-anchor">#</a> 条件语句</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">/*
+ * condition: 关系表达式或逻辑表达式，循环控制条件
  */</span>
-<span class="hljs-keyword">if</span> condition {
+<span class="token keyword">if</span> condition <span class="token punctuation">{</span>
 
-}
+<span class="token punctuation">}</span>
 
-eg.
-<span class="hljs-keyword">if</span> a == <span class="hljs-number">10</span> {
-  <span class="hljs-comment">/* &#x5982;&#x679C;&#x6761;&#x4EF6;&#x4E3A; true &#x5219;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5; */</span>
-  fmt.Println(<span class="hljs-string">&quot;a == 10&quot;</span> )
-}
+eg<span class="token punctuation">.</span>
+<span class="token keyword">if</span> a <span class="token operator">==</span> <span class="token number">10</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* 如果条件为 true 则执行以下语句 */</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;a == 10&quot;</span> <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">/*
- * statement: &#x53EF;&#x9009;&#x8BED;&#x53E5;&#x90E8;&#x5206;&#xFF0C;&#x5728;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x4E4B;&#x524D;&#x8FD0;&#x884C;
- * condition: &#x5173;&#x7CFB;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5224;&#x65AD;&#x6761;&#x4EF6;
+<span class="token comment">/*
+ * statement: 可选语句部分，在条件判断之前运行
+ * condition: 关系表达式或逻辑表达式，判断条件
  */</span>
-<span class="hljs-keyword">if</span> statement; condition {
+<span class="token keyword">if</span> statement<span class="token punctuation">;</span> condition <span class="token punctuation">{</span>
 
-}
+<span class="token punctuation">}</span>
 
-eg.
-<span class="hljs-keyword">if</span> a := <span class="hljs-number">1</span>  ;  a &lt; <span class="hljs-number">10</span> {
-  <span class="hljs-comment">// &#x5982;&#x679C;&#x6761;&#x4EF6;&#x4E3A; true &#x5219;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;</span>
-  fmt.Println(<span class="hljs-string">&quot;a &lt; 10&quot;</span> )
-}
-</code></pre>
-<h2 id="&#x5FAA;&#x73AF;&#x8BED;&#x53E5;">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
-<p>&#x65B9;&#x5F0F; 1</p>
-<pre><code class="lang-go"><span class="hljs-comment">/*
- * init&#xFF1A; &#x4E00;&#x822C;&#x4E3A;&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x7ED9;&#x63A7;&#x5236;&#x53D8;&#x91CF;&#x8D4B;&#x521D;&#x503C;&#xFF1B;
- * condition&#xFF1A; &#x5173;&#x7CFB;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x6761;&#x4EF6;&#xFF1B;
- * post&#xFF1A; &#x4E00;&#x822C;&#x4E3A;&#x8D4B;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x7ED9;&#x63A7;&#x5236;&#x53D8;&#x91CF;&#x589E;&#x91CF;&#x6216;&#x51CF;&#x91CF;&#x3002;
+eg<span class="token punctuation">.</span>
+<span class="token keyword">if</span> a <span class="token operator">:=</span> <span class="token number">1</span>  <span class="token punctuation">;</span>  a <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 如果条件为 true 则执行以下语句</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;a &lt; 10&quot;</span> <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="循环语句"><a href="#循环语句" class="header-anchor">#</a> 循环语句</h2> <p>方式 1</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">/*
+ * init： 一般为赋值表达式，给控制变量赋初值；
+ * condition： 关系表达式或逻辑表达式，循环控制条件；
+ * post： 一般为赋值表达式，给控制变量增量或减量。
  */</span>
-<span class="hljs-keyword">for</span> init; condition; post {
+<span class="token keyword">for</span> init<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> post <span class="token punctuation">{</span>
 
-}
+<span class="token punctuation">}</span>
 
-eg.
-<span class="hljs-keyword">for</span> i :=<span class="hljs-number">1</span> ; i &lt; <span class="hljs-number">10</span> ; i ++ {
-  fmt.Println(<span class="hljs-string">&quot;i = &quot;</span> , i)
-}
-</code></pre>
-<p>&#x65B9;&#x5F0F;2</p>
-<pre><code class="lang-go"><span class="hljs-comment">/*
- * condition&#xFF1A; &#x5173;&#x7CFB;&#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x6761;&#x4EF6;
+eg<span class="token punctuation">.</span>
+<span class="token keyword">for</span> i <span class="token operator">:=</span><span class="token number">1</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span> <span class="token punctuation">;</span> i <span class="token operator">++</span> <span class="token punctuation">{</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;i = &quot;</span> <span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>方式2</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">/*
+ * condition： 关系表达式或逻辑表达式，循环控制条件
  */</span>
-<span class="hljs-keyword">for</span> condition { }
+<span class="token keyword">for</span> condition <span class="token punctuation">{</span> <span class="token punctuation">}</span>
 
-eg.
-<span class="hljs-keyword">for</span> <span class="hljs-number">0</span> == <span class="hljs-number">0</span> {}
-<span class="hljs-keyword">for</span> <span class="hljs-literal">true</span> {}
-</code></pre>
-<p>&#x65B9;&#x5F0F;3</p>
-<pre><code class="lang-go"><span class="hljs-keyword">for</span> { }
+eg<span class="token punctuation">.</span>
+<span class="token keyword">for</span> <span class="token number">0</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">for</span> <span class="token boolean">true</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><p>方式3</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">for</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
 
-eg.
-<span class="hljs-keyword">for</span> {
-  <span class="hljs-comment">// &#x670D;&#x52A1;&#x5668;&#x76D1;&#x542C; 8080 &#x7AEF;&#x53E3;</span>
-  server.Listen(<span class="hljs-number">8080</span>)
-}
-</code></pre>
-<h2 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h2>
-<p>go &#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x662F;&#x652F;&#x6301;&#x591A;&#x8FD4;&#x56DE;&#x503C;&#x7684;</p>
-<pre><code class="lang-go"><span class="hljs-keyword">func</span> function_name( [parameter list] ) [return_types] {
-  <span class="hljs-comment">// &#x51FD;&#x6570;&#x4F53;</span>
-}
+eg<span class="token punctuation">.</span>
+<span class="token keyword">for</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 服务器监听 8080 端口</span>
+  server<span class="token punctuation">.</span><span class="token function">Listen</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <p>go 语言中的函数是支持多返回值的</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">func</span> <span class="token function">function_name</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>parameter list<span class="token punctuation">]</span> <span class="token punctuation">)</span> <span class="token punctuation">[</span>return_types<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 函数体</span>
+<span class="token punctuation">}</span>
 
-eg.
-<span class="hljs-comment">// &#x6B64;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E86;&#x53D6;&#x4E24;&#x4E2A;&#x6570;&#x6700;&#x5927;&#x503C;&#x7684;&#x529F;&#x80FD;</span>
-<span class="hljs-keyword">func</span> max(a <span class="hljs-keyword">int32</span>, b <span class="hljs-keyword">int32</span>) <span class="hljs-keyword">int32</span> {
-  <span class="hljs-keyword">if</span> a &gt; b {
-    <span class="hljs-keyword">return</span> a
-  } <span class="hljs-keyword">else</span> {
-    <span class="hljs-keyword">return</span> b
-  }
-}
+eg<span class="token punctuation">.</span>
+<span class="token comment">// 此函数实现了取两个数最大值的功能</span>
+<span class="token keyword">func</span> <span class="token function">max</span><span class="token punctuation">(</span>a <span class="token builtin">int32</span><span class="token punctuation">,</span> b <span class="token builtin">int32</span><span class="token punctuation">)</span> <span class="token builtin">int32</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> a <span class="token operator">&gt;</span> b <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> b
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">// &#x6B64;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E86;&#x53D6;&#x4E24;&#x4E2A;&#x6570;&#x6700;&#x5927;&#x503C;&#x548C;&#x6700;&#x5C0F;&#x503C;&#x7684;&#x529F;&#x80FD;</span>
-<span class="hljs-keyword">func</span> getMaxAndMin(a <span class="hljs-keyword">int32</span>, b <span class="hljs-keyword">int32</span>) (<span class="hljs-keyword">int32</span>, <span class="hljs-keyword">int32</span>) {
-  <span class="hljs-keyword">if</span> a &gt; b {
-    <span class="hljs-keyword">return</span> a, b
-  } <span class="hljs-keyword">else</span> {
-    <span class="hljs-keyword">return</span> b, a
-  }
-}
-</code></pre>
-<p>go &#x8BED;&#x8A00;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EB;&#x505A;&#x65B9;&#x6CD5;&#x3002;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x4E86;&#x63A5;&#x53D7;&#x8005;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x53D7;&#x8005;&#x53EF;&#x4EE5;&#x662F;&#x547D;&#x540D;&#x7C7B;&#x578B;&#x6216;&#x8005;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x503C;&#x6216;&#x8005;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x3002;</p>
-<pre><code class="lang-go"><span class="hljs-keyword">func</span> (variable_name variable_data_type) function_name() [return_type]{
-  <span class="hljs-comment">/* &#x51FD;&#x6570;&#x4F53;*/</span>
-}
+<span class="token comment">// 此函数实现了取两个数最大值和最小值的功能</span>
+<span class="token keyword">func</span> <span class="token function">getMaxAndMin</span><span class="token punctuation">(</span>a <span class="token builtin">int32</span><span class="token punctuation">,</span> b <span class="token builtin">int32</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token builtin">int32</span><span class="token punctuation">,</span> <span class="token builtin">int32</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> a <span class="token operator">&gt;</span> b <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a<span class="token punctuation">,</span> b
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> b<span class="token punctuation">,</span> a
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>go 语言还有一种特殊的函数，叫做方法。一个方法就是一个包含了接受者的函数，接受者可以是命名类型或者结构体类型的一个值或者是一个指针。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">func</span> <span class="token punctuation">(</span>variable_name variable_data_type<span class="token punctuation">)</span> <span class="token function">function_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span>return_type<span class="token punctuation">]</span><span class="token punctuation">{</span>
+  <span class="token comment">/* 函数体*/</span>
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">// &#x6211;&#x4EEC;&#x7528; &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x601D;&#x60F3;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5C01;&#x88C5;&#x7684;&#x7ED3;&#x6784;&#x4F53;</span>
-<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span>{
-  name <span class="hljs-keyword">string</span>  <span class="hljs-comment">// &#x59D3;&#x540D;</span>
-  age <span class="hljs-keyword">uint32</span>   <span class="hljs-comment">// &#x5E74;&#x9F84;</span>
-}
+<span class="token comment">// 我们用 面向对象的思想实现一个封装的结构体</span>
+<span class="token keyword">type</span> Person <span class="token keyword">struct</span><span class="token punctuation">{</span>
+  name <span class="token builtin">string</span>  <span class="token comment">// 姓名</span>
+  age <span class="token builtin">uint32</span>   <span class="token comment">// 年龄</span>
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">// &#x83B7;&#x53D6;&#x59D3;&#x540D;</span>
-<span class="hljs-keyword">func</span> (p *Person) GetName() <span class="hljs-keyword">string</span>{
-  <span class="hljs-keyword">return</span> p.name
-}
+<span class="token comment">// 获取姓名</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Person<span class="token punctuation">)</span> <span class="token function">GetName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> p<span class="token punctuation">.</span>name
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">// &#x83B7;&#x53D6;&#x5E74;&#x9F84;</span>
-<span class="hljs-keyword">func</span> (p *Person) GetAge() <span class="hljs-keyword">uint32</span>{
-  <span class="hljs-keyword">return</span> p.age
-}
+<span class="token comment">// 获取年龄</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Person<span class="token punctuation">)</span> <span class="token function">GetAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">uint32</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> p<span class="token punctuation">.</span>age
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x59D3;&#x540D;</span>
-<span class="hljs-keyword">func</span> (p *Person) SetName(name <span class="hljs-keyword">string</span>) {
-  p.name = name
-}
+<span class="token comment">// 设置姓名</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Person<span class="token punctuation">)</span> <span class="token function">SetName</span><span class="token punctuation">(</span>name <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  p<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+<span class="token punctuation">}</span>
 
-<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5E74;&#x9F84;</span>
-<span class="hljs-keyword">func</span> (p *Person) SetAge(age <span class="hljs-keyword">uint32</span>) {
-  p.age = age
-}
-</code></pre>
-<h2 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;</h2>
-<p>&#x7ED3;&#x5408;&#x81EA;&#x5B9A;&#x4E49;&#x7684; error &#x7C7B;&#x578B;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x4F7F;&#x7528; panic &#x548C; recover &#x7684;&#x5B8C;&#x6574;&#x4F8B;&#x5B50;&#xFF1A;</p>
-<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+<span class="token comment">// 设置年龄</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Person<span class="token punctuation">)</span> <span class="token function">SetAge</span><span class="token punctuation">(</span>age <span class="token builtin">uint32</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  p<span class="token punctuation">.</span>age <span class="token operator">=</span> age
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="异常处理"><a href="#异常处理" class="header-anchor">#</a> 异常处理</h2> <p>结合自定义的 error 类型给出一个使用 panic 和 recover 的完整例子：</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
 
-<span class="hljs-keyword">import</span> (
-  <span class="hljs-string">&quot;fmt&quot;</span>
-)
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+  <span class="token string">&quot;fmt&quot;</span>
+<span class="token punctuation">)</span>
 
-<span class="hljs-comment">// &#x5B9A;&#x4E49;&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x51FD;&#x6570;</span>
-<span class="hljs-keyword">func</span> Devide(num1, num2 <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {
-  <span class="hljs-keyword">if</span> num2 == <span class="hljs-number">0</span> {
-    <span class="hljs-built_in">panic</span>(<span class="hljs-string">&quot;num cannot be 0&quot;</span>)
-  } <span class="hljs-keyword">else</span> {
-    <span class="hljs-keyword">return</span> num1 / num2
-  }
-}
+<span class="token comment">// 定义除法运算函数</span>
+<span class="token keyword">func</span> <span class="token function">Devide</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2 <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> num2 <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+    <span class="token function">panic</span><span class="token punctuation">(</span><span class="token string">&quot;num cannot be 0&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> num1 <span class="token operator">/</span> num2
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="hljs-keyword">func</span> main() {
-  <span class="hljs-keyword">var</span> a, b <span class="hljs-keyword">int</span>
-  fmt.Scanf(<span class="hljs-string">&quot;%d %d&quot;</span>, &amp;a, &amp;b)
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> a<span class="token punctuation">,</span> b <span class="token builtin">int</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span>
 
-  <span class="hljs-keyword">defer</span> <span class="hljs-keyword">func</span>() {
-    <span class="hljs-keyword">if</span> r := <span class="hljs-built_in">recover</span>(); r != <span class="hljs-literal">nil</span> {
-      fmt.Printf(<span class="hljs-string">&quot;panic&#x7684;&#x5185;&#x5BB9;%v\n&quot;</span>, r)
-    }
-  }()
+  <span class="token keyword">defer</span> <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> r <span class="token operator">:=</span> <span class="token function">recover</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> r <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+      fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;panic的内容%v\n&quot;</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-  rs := Devide(a, b)
-  fmt.Println(<span class="hljs-string">&quot;&#x7ED3;&#x679C;&#x662F;&#xFF1A;&quot;</span>, rs)
-}
-</code></pre>
-<h2 id="&#x6743;&#x9650;&#x63A7;&#x5236;">&#x6743;&#x9650;&#x63A7;&#x5236;</h2>
-<p><strong>&#x5728; go &#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x662F;&#x901A;&#x8FC7;&#x7EA6;&#x5B9A;&#x6765;&#x5B9E;&#x73B0;&#x6743;&#x9650;&#x63A7;&#x5236;&#x7684;</strong>&#x3002;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x90FD;&#x9075;&#x5B88;&#x9A7C;&#x5CF0;&#x5F0F;&#x547D;&#x540D;&#x3002;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>public</code>&#xFF0C;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>private</code>&#x3002;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x4E2D;&#x8BBF;&#x95EE;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>default</code> &#xFF0C;&#x7531;&#x4E8E; <code>go</code> &#x8BED;&#x8A00;&#x6CA1;&#x6709;&#x7EE7;&#x627F;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x6CA1;&#x6709; <code>protected</code> &#x6743;&#x9650;&#x3002;</p>
-<h2 id="&#x7EE7;&#x627F;">&#x7EE7;&#x627F;</h2>
-<p>go &#x8BED;&#x8A00;&#x662F;&#x6CA1;&#x6709;&#x7EE7;&#x627F;&#x7684;&#x3002;&#x4F46;&#x662F; go &#x8BED;&#x8A00;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7ED3;&#x6784;&#x4F53;&#x4E4B;&#x95F4;&#x7684;&#x7EC4;&#x5408;&#x6765;&#x5B9E;&#x73B0;&#x7C7B;&#x4F3C;&#x7EE7;&#x627F;&#x7684;&#x6548;&#x679C;&#x3002;</p>
-<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
-<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span>
-<span class="hljs-keyword">type</span> oo <span class="hljs-keyword">struct</span> {
+  rs <span class="token operator">:=</span> <span class="token function">Devide</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;结果是：&quot;</span><span class="token punctuation">,</span> rs<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="权限控制"><a href="#权限控制" class="header-anchor">#</a> 权限控制</h2> <p><strong>在 go 语言中，是通过约定来实现权限控制的</strong>。变量和方法都遵守驼峰式命名。变量和方法的首字母大写，相当于 <code>public</code>，变量和方法的首字母小写，相当于 <code>private</code>。同一个包中访问，相当于 <code>default</code> ，由于 <code>go</code> 语言没有继承，所以也没有 <code>protected</code> 权限。</p> <h2 id="继承"><a href="#继承" class="header-anchor">#</a> 继承</h2> <p>go 语言是没有继承的。但是 go 语言可以通过结构体之间的组合来实现类似继承的效果。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+<span class="token keyword">type</span> oo <span class="token keyword">struct</span> <span class="token punctuation">{</span>
   inner
-  ss1 <span class="hljs-keyword">string</span>
-  ss2 <span class="hljs-keyword">int</span>
-  ss3 <span class="hljs-keyword">bool</span>
-}
-<span class="hljs-keyword">type</span> inner <span class="hljs-keyword">struct</span> {
-  ss4 <span class="hljs-keyword">string</span>
-}
-<span class="hljs-keyword">func</span> (i *inner) testMethod () {
-  fmt.Println(<span class="hljs-string">&quot;testMethod is called!!!&quot;</span>)
-}
-<span class="hljs-keyword">func</span> main()  {
-  oo1 := <span class="hljs-built_in">new</span>(oo)
-  fmt.Println(<span class="hljs-string">&quot;ss4&#x65E0;&#x503C;&#xFF1A;&quot;</span>+oo1.ss4)
-  oo1.ss4 = <span class="hljs-string">&quot;abc&quot;</span>
-  fmt.Println(<span class="hljs-string">&quot;ss4&#x5DF2;&#x8D4B;&#x503C;&quot;</span>+oo1.ss4)
-  oo1.testMethod()<span class="hljs-comment">//&#x7EE7;&#x627F;&#x8C03;&#x7528;</span>
-  oo1.inner.testMethod()<span class="hljs-comment">//&#x7EE7;&#x627F;&#x8C03;&#x7528; &#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x91CD;&#x5199;</span>
-}
-</code></pre>
-<h2 id="&#x591A;&#x6001;">&#x591A;&#x6001;</h2>
-<p>&#x5728; go &#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x53EA;&#x8981;&#x67D0;&#x4E2A; struct &#x5B9E;&#x73B0;&#x4E86;&#x67D0;&#x4E2A; interface &#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E2A; struct &#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x4E2A;&#x7C7B;&#x3002;</p>
-<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
-<span class="hljs-keyword">import</span> (
-  <span class="hljs-string">&quot;fmt&quot;</span>
-)
-<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">interface</span> {
-  Sing ()
-}
-<span class="hljs-keyword">type</span> Girl <span class="hljs-keyword">struct</span> {
-  Name <span class="hljs-keyword">string</span>
-}
-<span class="hljs-keyword">type</span> Boy <span class="hljs-keyword">struct</span> {
-  Name <span class="hljs-keyword">string</span>
-}
-<span class="hljs-keyword">func</span> (this *Girl) Sing () {
-  fmt.Println(<span class="hljs-string">&quot;Hi, I am  &quot;</span> + this.Name)
-}
-<span class="hljs-keyword">func</span> (this *Boy) Sing () {
-  fmt.Println(<span class="hljs-string">&quot;Hi, I am  &quot;</span> + this.Name)
-}
-<span class="hljs-keyword">func</span> main() {
-  g := &amp;Girl{<span class="hljs-string">&quot;Lucy&quot;</span>}
-  b := &amp;Boy{<span class="hljs-string">&quot;Dave&quot;</span>}
+  ss1 <span class="token builtin">string</span>
+  ss2 <span class="token builtin">int</span>
+  ss3 <span class="token builtin">bool</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> inner <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+  ss4 <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>i <span class="token operator">*</span>inner<span class="token punctuation">)</span> testMethod <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;testMethod is called!!!&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+  oo1 <span class="token operator">:=</span> <span class="token function">new</span><span class="token punctuation">(</span>oo<span class="token punctuation">)</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;ss4无值：&quot;</span><span class="token operator">+</span>oo1<span class="token punctuation">.</span>ss4<span class="token punctuation">)</span>
+  oo1<span class="token punctuation">.</span>ss4 <span class="token operator">=</span> <span class="token string">&quot;abc&quot;</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;ss4已赋值&quot;</span><span class="token operator">+</span>oo1<span class="token punctuation">.</span>ss4<span class="token punctuation">)</span>
+  oo1<span class="token punctuation">.</span><span class="token function">testMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//继承调用</span>
+  oo1<span class="token punctuation">.</span>inner<span class="token punctuation">.</span><span class="token function">testMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//继承调用 这里也可以重写</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="多态"><a href="#多态" class="header-anchor">#</a> 多态</h2> <p>在 go 语言中，只要某个 struct 实现了某个 interface 的所有方法，那么我们就认为这个 struct 实现了这个类。</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+  <span class="token string">&quot;fmt&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">type</span> Person <span class="token keyword">interface</span> <span class="token punctuation">{</span>
+  Sing <span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> Girl <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+  Name <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">type</span> Boy <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+  Name <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>this <span class="token operator">*</span>Girl<span class="token punctuation">)</span> Sing <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;Hi, I am  &quot;</span> <span class="token operator">+</span> this<span class="token punctuation">.</span>Name<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>this <span class="token operator">*</span>Boy<span class="token punctuation">)</span> Sing <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;Hi, I am  &quot;</span> <span class="token operator">+</span> this<span class="token punctuation">.</span>Name<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  g <span class="token operator">:=</span> <span class="token operator">&amp;</span>Girl<span class="token punctuation">{</span><span class="token string">&quot;Lucy&quot;</span><span class="token punctuation">}</span>
+  b <span class="token operator">:=</span> <span class="token operator">&amp;</span>Boy<span class="token punctuation">{</span><span class="token string">&quot;Dave&quot;</span><span class="token punctuation">}</span>
 
-  p := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]Person{}
-  p[<span class="hljs-number">0</span>] = g
-  p[<span class="hljs-number">1</span>] = b
+  p <span class="token operator">:=</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span>Person<span class="token punctuation">{</span><span class="token punctuation">}</span>
+  p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> g
+  p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> b
 
-  <span class="hljs-keyword">for</span> _, v := <span class="hljs-keyword">range</span> p {
-    v.Sing()
-  }
-}
-</code></pre>
-<hr>
-<blockquote>
-<p>Title: Go &#x57FA;&#x7840;</p>
-<p>Date: 2019.07.20</p>
-<p>Author: zhangpeng</p>
-<p>Github: <a href="https://github.com/fullstack-zhangpeng" target="_blank">https://github.com/fullstack-zhangpeng</a></p>
-</blockquote>
-<p><footer class="page-footer"><span class="copyright">Copyright &#xA9; zhang peng 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-09-10 06:58:34
-</span></footer><hr><div id="vcomments"></div><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>new Valine({el: "#vcomments",appId: 'Wc0xV1kr4C46mVbpgmA5jTgO-gzGzoHsz',appKey: 'e1wHasMdWtVIzwqc1PhqkQh9',placeholder: 'Just go go',avatar: '',meta: undefined,pageSize: 10,lang: 'zh-CN',recordIP: false})</script></p>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
-                        </div>
-                    </div>
-                
-            </div>
-
-            
-                
-                <a href="go-command.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Go 1.13 中 Go command 修改">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-            
-        
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Go 基础","level":"1.3.2","depth":2,"next":{"title":"Flutter","level":"1.4","depth":1,"ref":"","articles":[{"title":"Flutter 安装和环境配置","level":"1.4.1","depth":2,"path":"flutter/install-flutter.md","ref":"flutter/install-flutter.md","articles":[]}]},"previous":{"title":"Go 1.13 中 Go command 修改","level":"1.3.1","depth":2,"path":"go/go-command.md","ref":"go/go-command.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","back-to-top-button","github","splitter","code","pageview-count","tbfed-pagefooter","-search","search-plus","valine"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhang peng 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/fullstack-zhangpeng"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"valine":{"avatar":"","lang":"zh-CN","pageSize":10,"placeholder":"Just go go","recordIP":false,"appId":"Wc0xV1kr4C46mVbpgmA5jTgO-gzGzoHsz","appKey":"e1wHasMdWtVIzwqc1PhqkQh9"},"search-plus":{}},"theme":"default","author":"zhangpeng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Articles","language":"zh-hans","gitbook":"*"},"file":{"path":"go/go.md","mtime":"2020-09-10T06:58:34.556Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-10T06:59:27.092Z"},"basePath":"..","book":{"language":""}});
-        });
-    </script>
-</div>
-
-        
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-
-    </body>
+  <span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> v <span class="token operator">:=</span> <span class="token keyword">range</span> p <span class="token punctuation">{</span>
+    v<span class="token punctuation">.</span><span class="token function">Sing</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <blockquote><p>Title: Go 基础</p> <p>Date: 2019.07.20</p> <p>Author: zhangpeng</p> <p>Github: <a href="https://github.com/fullstack-zhangpeng" target="_blank" rel="noopener noreferrer">https://github.com/fullstack-zhangpeng<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.2d13e179.js" defer></script><script src="/assets/js/3.5c4220a4.js" defer></script><script src="/assets/js/1.e1e7594c.js" defer></script><script src="/assets/js/19.b5c49043.js" defer></script>
+  </body>
 </html>
-
